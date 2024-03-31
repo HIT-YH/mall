@@ -1,7 +1,6 @@
 package com.hmall.trade.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.hmall.api.client.CartClient;
 import com.hmall.api.client.ItemClient;
 import com.hmall.api.dto.ItemDTO;
 import com.hmall.api.dto.OrderDetailDTO;
@@ -15,13 +14,12 @@ import com.hmall.trade.service.IOrderDetailService;
 import com.hmall.trade.service.IOrderService;
 import io.seata.spring.annotation.GlobalTransactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.amqp.AmqpException;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -38,7 +36,8 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
 
     private final ItemClient itemClient;
     private final IOrderDetailService detailService;
-    private final CartClient cartClient;
+    private final RabbitTemplate rabbitTemplate;
+//    private final CartClient cartClient;
 
     @Override
 //    @Transactional  // 声明这是一个事务
@@ -51,7 +50,9 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         // 1.2.获取商品id和数量的Map
         Map<Long, Integer> itemNumMap = detailDTOS.stream()
                 .collect(Collectors.toMap(OrderDetailDTO::getItemId, OrderDetailDTO::getNum));
-        Set<Long> itemIds = itemNumMap.keySet();
+        //java.util.HashMap$KeySet无法序列化，所有需要转换成HashSet
+        Set<Long> itemIds = new HashSet<>(itemNumMap.keySet());
+
         // 1.3.查询商品
         List<ItemDTO> items = itemClient.queryItemByIds(itemIds);
         if (items == null || items.size() < itemIds.size()) {
@@ -75,7 +76,12 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         detailService.saveBatch(details);
 
         // 3.清理购物车商品
-        cartClient.deleteCartItemByIds(itemIds);
+//        cartClient.deleteCartItemByIds(itemIds);
+        try {
+            rabbitTemplate.convertAndSend("trade.topic","order.create",itemIds);
+        } catch (AmqpException e) {
+            log.error("创建订单时，清理购物车商品失败",e);
+        }
 
         // 4.扣减库存
         try {
