@@ -680,3 +680,1231 @@ feign.FeignException$MethodNotAllowed: [405] during [DELETE] to [http://user-ser
 10:08:52:325  INFO 9652 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@5b2cb116[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 516]
 10:08:52:329  INFO 9652 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 10:08:52:345  INFO 9652 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+10:09:09:239  INFO 10800 --- [main] com.hmall.pay.PayApplication             : The following 1 profile is active: "local"
+10:09:10:136  INFO 10800 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f9167c25-103b-35ee-8dd5-d60685d1a4c7
+10:09:10:523  INFO 10800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+10:09:10:524  INFO 10800 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+10:09:10:524  INFO 10800 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+10:09:10:524  INFO 10800 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+10:09:10:525  INFO 10800 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+10:09:10:528  INFO 10800 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+10:09:10:536  INFO 10800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+10:09:10:536  INFO 10800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+10:09:10:751  INFO 10800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+10:09:10:751  INFO 10800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1491 ms
+10:09:10:960  INFO 10800 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
+10:09:13:634  INFO 10800 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+10:09:14:806  INFO 10800 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+10:09:16:257  INFO 10800 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 3d37b446-4da6-4915-a18c-c98c1e58f917
+10:09:16:257  INFO 10800 --- [main] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] RpcClient init label, labels = {module=naming, source=sdk}
+10:09:16:259  INFO 10800 --- [main] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+10:09:16:259  INFO 10800 --- [main] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+10:09:16:259  INFO 10800 --- [main] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+10:09:16:260  INFO 10800 --- [main] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Try to connect to server on start up, server: {serverIp = '192.168.137.128', server main port = 8848}
+10:09:16:380  INFO 10800 --- [main] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Success to connect to server [192.168.137.128:8848] on start up, connectionId = 1711817982200_192.168.137.1_57458
+10:09:16:380  INFO 10800 --- [main] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+10:09:16:380  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Notify connected event to listeners.
+10:09:16:382  INFO 10800 --- [main] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$473/0x000000080041b440
+10:09:16:420  INFO 10800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+10:09:16:427  INFO 10800 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP pay-service 192.168.137.1:8086 register finished
+10:09:16:949  INFO 10800 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Receive server push request, request = NotifySubscriberRequest, requestId = 37
+10:09:16:955  INFO 10800 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Ack server push request, request = NotifySubscriberRequest, requestId = 37
+10:09:17:338  INFO 10800 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+10:09:17:340  INFO 10800 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+10:09:17:359  INFO 10800 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+10:09:17:439  INFO 10800 --- [main] com.hmall.pay.PayApplication             : Started PayApplication in 14.512 seconds (JVM running for 16.888)
+10:09:17:444  INFO 10800 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=pay-service, group=DEFAULT_GROUP
+10:09:17:444  INFO 10800 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=pay-service.yaml, group=DEFAULT_GROUP
+10:09:17:445  INFO 10800 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=pay-service-local.yaml, group=DEFAULT_GROUP
+10:09:56:425  INFO 10800 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:09:56:425  INFO 10800 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+10:09:56:426  INFO 10800 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+10:09:56:639  INFO 10800 --- [http-nio-8086-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+10:09:56:824  INFO 10800 --- [http-nio-8086-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+10:09:56:830 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:09:56:848 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774257791435923457(Long)
+10:09:56:865 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:09:56:915 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:09:56:918 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774257794204078082(Long), 1774257791435923457(Long), 1774257794204078081(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:09:56.910651300(LocalDateTime)
+10:09:56:921 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:10:00:976 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.p.mapper.PayOrderMapper.selectById   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+10:10:00:977 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.p.mapper.PayOrderMapper.selectById   : ==> Parameters: 1774257794204078082(Long)
+10:10:00:981 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.p.mapper.PayOrderMapper.selectById   : <==      Total: 1
+10:10:00:984 DEBUG 10800 --- [http-nio-8086-exec-3] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> PUT http://user-service/users/money/deduct?pw=123&amount=9700 HTTP/1.1
+10:10:01:161 DEBUG 10800 --- [http-nio-8086-exec-3] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- HTTP/1.1 200 (176ms)
+10:10:01:165 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.update     : ==>  Preparing: UPDATE pay_order SET status=?,pay_success_time=? WHERE (id = ? AND status IN (?,?))
+10:10:01:166 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.update     : ==> Parameters: 3(Integer), 2024-03-31T10:10:01.161294400(LocalDateTime), 1774257794204078082(Long), 0(Integer), 1(Integer)
+10:10:01:168 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.update     : <==    Updates: 1
+10:10:01:172  INFO 10800 --- [http-nio-8086-exec-3] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.137.128:5672]
+10:10:01:207  INFO 10800 --- [http-nio-8086-exec-3] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#6d9ee75a:0/SimpleConnection@308a9033 [delegate=amqp://hmall@192.168.137.128:5672//hmall, localPort= 57510]
+10:10:01:567  INFO 10800 --- [nacos-grpc-client-executor-19] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Receive server push request, request = NotifySubscriberRequest, requestId = 38
+10:10:01:567  INFO 10800 --- [nacos-grpc-client-executor-19] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Ack server push request, request = NotifySubscriberRequest, requestId = 38
+10:14:26:003 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:14:26:003 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774257791435923457(Long)
+10:14:26:005 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:14:26:016 ERROR 10800 --- [http-nio-8086-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.hmall.common.exception.BizIllegalException: 订单已经支付！] with root cause
+
+com.hmall.common.exception.BizIllegalException: 订单已经支付！
+	at com.hmall.pay.service.impl.PayOrderServiceImpl.checkIdempotent(PayOrderServiceImpl.java:101) ~[classes/:na]
+	at com.hmall.pay.service.impl.PayOrderServiceImpl.applyPayOrder(PayOrderServiceImpl.java:45) ~[classes/:na]
+	at com.hmall.pay.service.impl.PayOrderServiceImpl$$FastClassBySpringCGLIB$$b2062e7f.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.27.jar:5.3.27]
+	at com.hmall.pay.service.impl.PayOrderServiceImpl$$EnhancerBySpringCGLIB$$403cfc71.applyPayOrder(<generated>) ~[classes/:na]
+	at com.hmall.pay.controller.PayController.applyPayOrder(PayController.java:39) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:14:47:762 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:14:47:762 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774259013521891330(Long)
+10:14:47:763 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:14:47:765 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:14:47:765 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774259014100619267(Long), 1774259013521891330(Long), 1774259014100619266(Long), 1(Long), balance(String), 12800(Integer), 5(Integer), 1(Integer), 2024-03-31T12:14:47.764234500(LocalDateTime)
+10:14:47:769 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:21:06:392 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:21:06:393 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774259013521891330(Long)
+10:21:06:395 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:22:17:977 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.p.mapper.PayOrderMapper.selectById   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+10:22:17:977 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.p.mapper.PayOrderMapper.selectById   : ==> Parameters: 1774259014100619267(Long)
+10:22:17:979 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.p.mapper.PayOrderMapper.selectById   : <==      Total: 1
+10:22:17:980 DEBUG 10800 --- [http-nio-8086-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> PUT http://user-service/users/money/deduct?pw=123456&amount=12800 HTTP/1.1
+10:22:18:066 DEBUG 10800 --- [http-nio-8086-exec-9] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- HTTP/1.1 500 (86ms)
+10:22:18:070 ERROR 10800 --- [http-nio-8086-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.FeignException$InternalServerError: [500] during [PUT] to [http://user-service/users/money/deduct?pw=123456&amount=12800] [UserClient#deductMoney(String,Integer)]: [{"timestamp":"2024-03-31T02:22:18.064+00:00","status":500,"error":"Internal Server Error","path":"/users/money/deduct"}]] with root cause
+
+feign.FeignException$InternalServerError: [500] during [PUT] to [http://user-service/users/money/deduct?pw=123456&amount=12800] [UserClient#deductMoney(String,Integer)]: [{"timestamp":"2024-03-31T02:22:18.064+00:00","status":500,"error":"Internal Server Error","path":"/users/money/deduct"}]
+	at feign.FeignException.serverErrorStatus(FeignException.java:250) ~[feign-core-11.8.jar:na]
+	at feign.FeignException.errorStatus(FeignException.java:197) ~[feign-core-11.8.jar:na]
+	at feign.FeignException.errorStatus(FeignException.java:185) ~[feign-core-11.8.jar:na]
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92) ~[feign-core-11.8.jar:na]
+	at feign.AsyncResponseHandler.handleResponse(AsyncResponseHandler.java:96) ~[feign-core-11.8.jar:na]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138) ~[feign-core-11.8.jar:na]
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-11.8.jar:na]
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100) ~[feign-core-11.8.jar:na]
+	at com.sun.proxy.$Proxy122.deductMoney(Unknown Source) ~[na:na]
+	at com.hmall.pay.service.impl.PayOrderServiceImpl.tryPayOrderByBalance(PayOrderServiceImpl.java:61) ~[classes/:na]
+	at com.hmall.pay.service.impl.PayOrderServiceImpl$$FastClassBySpringCGLIB$$b2062e7f.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.27.jar:5.3.27]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.27.jar:5.3.27]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.27.jar:5.3.27]
+	at com.hmall.pay.service.impl.PayOrderServiceImpl$$EnhancerBySpringCGLIB$$403cfc71.tryPayOrderByBalance(<generated>) ~[classes/:na]
+	at com.hmall.pay.controller.PayController.tryPayOrderByBalance(PayController.java:47) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:22:21:363 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.p.mapper.PayOrderMapper.selectById   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+10:22:21:364 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.p.mapper.PayOrderMapper.selectById   : ==> Parameters: 1774259014100619267(Long)
+10:22:21:365 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.p.mapper.PayOrderMapper.selectById   : <==      Total: 1
+10:22:21:366 DEBUG 10800 --- [http-nio-8086-exec-10] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> PUT http://user-service/users/money/deduct?pw=123&amount=12800 HTTP/1.1
+10:22:21:450 DEBUG 10800 --- [http-nio-8086-exec-10] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- HTTP/1.1 200 (84ms)
+10:22:21:451 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.update     : ==>  Preparing: UPDATE pay_order SET status=?,pay_success_time=? WHERE (id = ? AND status IN (?,?))
+10:22:21:452 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.update     : ==> Parameters: 3(Integer), 2024-03-31T10:22:21.451059(LocalDateTime), 1774259014100619267(Long), 0(Integer), 1(Integer)
+10:22:21:453 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.update     : <==    Updates: 1
+10:22:33:651 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:22:33:651 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774260967467769858(Long)
+10:22:33:652 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:22:33:653 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:22:33:654 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774260968176521218(Long), 1774260967467769858(Long), 1774260968176521217(Long), 1(Long), balance(String), 12800(Integer), 5(Integer), 1(Integer), 2024-03-31T12:22:33.653050500(LocalDateTime)
+10:22:33:657 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:23:41:374 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:23:41:374 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774261251648643074(Long)
+10:23:41:375 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:23:41:376 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:23:41:377 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774261252227371010(Long), 1774261251648643074(Long), 1774261252227371009(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:23:41.376322900(LocalDateTime)
+10:23:41:380 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:23:47:731 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.p.mapper.PayOrderMapper.selectById   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+10:23:47:731 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.p.mapper.PayOrderMapper.selectById   : ==> Parameters: 1774261252227371010(Long)
+10:23:47:734 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.p.mapper.PayOrderMapper.selectById   : <==      Total: 1
+10:23:47:734 DEBUG 10800 --- [http-nio-8086-exec-4] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> PUT http://user-service/users/money/deduct?pw=123&amount=9700 HTTP/1.1
+10:23:47:825 DEBUG 10800 --- [http-nio-8086-exec-4] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- HTTP/1.1 200 (90ms)
+10:23:47:826 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.update     : ==>  Preparing: UPDATE pay_order SET status=?,pay_success_time=? WHERE (id = ? AND status IN (?,?))
+10:23:47:826 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.update     : ==> Parameters: 3(Integer), 2024-03-31T10:23:47.825427100(LocalDateTime), 1774261252227371010(Long), 0(Integer), 1(Integer)
+10:23:47:827 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.update     : <==    Updates: 1
+10:23:54:423 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.p.mapper.PayOrderMapper.selectById   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+10:23:54:424 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.p.mapper.PayOrderMapper.selectById   : ==> Parameters: 1774261252227371010(Long)
+10:23:54:425 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.p.mapper.PayOrderMapper.selectById   : <==      Total: 1
+10:23:54:426 ERROR 10800 --- [http-nio-8086-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.hmall.common.exception.BizIllegalException: 交易已支付或关闭！] with root cause
+
+com.hmall.common.exception.BizIllegalException: 交易已支付或关闭！
+	at com.hmall.pay.service.impl.PayOrderServiceImpl.tryPayOrderByBalance(PayOrderServiceImpl.java:58) ~[classes/:na]
+	at com.hmall.pay.service.impl.PayOrderServiceImpl$$FastClassBySpringCGLIB$$b2062e7f.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.27.jar:5.3.27]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.27.jar:5.3.27]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.27.jar:5.3.27]
+	at com.hmall.pay.service.impl.PayOrderServiceImpl$$EnhancerBySpringCGLIB$$403cfc71.tryPayOrderByBalance(<generated>) ~[classes/:na]
+	at com.hmall.pay.controller.PayController.tryPayOrderByBalance(PayController.java:47) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:23:57:762 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.p.mapper.PayOrderMapper.selectById   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+10:23:57:762 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.p.mapper.PayOrderMapper.selectById   : ==> Parameters: 1774261252227371010(Long)
+10:23:57:764 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.p.mapper.PayOrderMapper.selectById   : <==      Total: 1
+10:23:57:766 ERROR 10800 --- [http-nio-8086-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.hmall.common.exception.BizIllegalException: 交易已支付或关闭！] with root cause
+
+com.hmall.common.exception.BizIllegalException: 交易已支付或关闭！
+	at com.hmall.pay.service.impl.PayOrderServiceImpl.tryPayOrderByBalance(PayOrderServiceImpl.java:58) ~[classes/:na]
+	at com.hmall.pay.service.impl.PayOrderServiceImpl$$FastClassBySpringCGLIB$$b2062e7f.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.27.jar:5.3.27]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.27.jar:5.3.27]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.27.jar:5.3.27]
+	at com.hmall.pay.service.impl.PayOrderServiceImpl$$EnhancerBySpringCGLIB$$403cfc71.tryPayOrderByBalance(<generated>) ~[classes/:na]
+	at com.hmall.pay.controller.PayController.tryPayOrderByBalance(PayController.java:47) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:24:01:293 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:24:01:293 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774261335354368002(Long)
+10:24:01:294 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:24:01:295 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:24:01:295 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774261335803072515(Long), 1774261335354368002(Long), 1774261335803072514(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:24:01.295130(LocalDateTime)
+10:24:01:299 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:24:03:869 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.p.mapper.PayOrderMapper.selectById   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+10:24:03:870 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.p.mapper.PayOrderMapper.selectById   : ==> Parameters: 1774261335803072515(Long)
+10:24:03:871 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.p.mapper.PayOrderMapper.selectById   : <==      Total: 1
+10:24:03:872 DEBUG 10800 --- [http-nio-8086-exec-8] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> PUT http://user-service/users/money/deduct?pw=123&amount=9700 HTTP/1.1
+10:24:03:961 DEBUG 10800 --- [http-nio-8086-exec-8] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- HTTP/1.1 200 (88ms)
+10:24:03:962 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.update     : ==>  Preparing: UPDATE pay_order SET status=?,pay_success_time=? WHERE (id = ? AND status IN (?,?))
+10:24:03:962 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.update     : ==> Parameters: 3(Integer), 2024-03-31T10:24:03.961405800(LocalDateTime), 1774261335803072515(Long), 0(Integer), 1(Integer)
+10:24:03:963 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.update     : <==    Updates: 1
+10:29:30:360 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:29:30:360 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774262715372658690(Long)
+10:29:30:362 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:29:30:364 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:29:30:364 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774262716018495490(Long), 1774262715372658690(Long), 1774262715951386626(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:29:30.362656800(LocalDateTime)
+10:29:30:367 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:32:04:256 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:32:04:257 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774262715372658690(Long)
+10:32:04:261 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:32:09:833 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:32:09:833 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774262715372658690(Long)
+10:32:09:835 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:32:20:550 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:32:20:550 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774262715372658690(Long)
+10:32:20:551 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:32:31:056 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:32:31:056 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774262715372658690(Long)
+10:32:31:058 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:32:31:746 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:32:31:746 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774262715372658690(Long)
+10:32:31:748 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:32:32:960 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:32:32:960 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774262715372658690(Long)
+10:32:32:962 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:32:36:707 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:32:36:707 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263497119621122(Long)
+10:32:36:709 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:32:36:710 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:32:36:711 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774263497568325635(Long), 1774263497119621122(Long), 1774263497568325634(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:32:36.710076300(LocalDateTime)
+10:32:36:715 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:32:45:803 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:32:45:804 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263497119621122(Long)
+10:32:45:808 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:32:46:425 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:32:46:426 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263497119621122(Long)
+10:32:46:427 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:32:48:608 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:32:48:609 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263546977312770(Long)
+10:32:48:609 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:32:48:613 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:32:48:614 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774263547493126146(Long), 1774263546977312770(Long), 1774263547493126145(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:32:48.610984600(LocalDateTime)
+10:32:48:617 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:33:03:077 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:33:03:077 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263607685668865(Long)
+10:33:03:078 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:33:03:079 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:33:03:079 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774263608201482242(Long), 1774263607685668865(Long), 1774263608201482241(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:33:03.078985300(LocalDateTime)
+10:33:03:083 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:33:24:122 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:33:24:123 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263696042876929(Long)
+10:33:24:124 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:33:24:125 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:33:24:126 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774263696428666882(Long), 1774263696042876929(Long), 1774263696428666881(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:33:24.125403700(LocalDateTime)
+10:33:24:129 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:33:31:359 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:33:31:359 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263696042876929(Long)
+10:33:31:361 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:33:38:311 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:33:38:311 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263696042876929(Long)
+10:33:38:313 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:33:39:181 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:33:39:181 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263696042876929(Long)
+10:33:39:182 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:33:39:779 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:33:39:780 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263696042876929(Long)
+10:33:39:781 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:33:47:522 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:33:47:522 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263794076344321(Long)
+10:33:47:523 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:33:47:524 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:33:47:525 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774263794592157698(Long), 1774263794076344321(Long), 1774263794592157697(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:33:47.524231200(LocalDateTime)
+10:33:47:529 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:33:49:131 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:33:49:131 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263794076344321(Long)
+10:33:49:132 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:33:49:697 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:33:49:698 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263794076344321(Long)
+10:33:49:699 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:33:50:096 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:33:50:096 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263794076344321(Long)
+10:33:50:098 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:33:54:397 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:33:54:397 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263822958321666(Long)
+10:33:54:398 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:33:54:399 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:33:54:400 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774263823415414786(Long), 1774263822958321666(Long), 1774263823415414785(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:33:54.399118(LocalDateTime)
+10:33:54:404 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:33:56:055 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:33:56:055 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263822958321666(Long)
+10:33:56:056 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:33:56:517 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:33:56:517 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263822958321666(Long)
+10:33:56:519 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:34:03:437 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:34:03:437 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263860929355778(Long)
+10:34:03:438 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:34:03:440 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:34:03:440 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774263861382254594(Long), 1774263860929355778(Long), 1774263861382254593(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:34:03.439930800(LocalDateTime)
+10:34:03:444 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:34:05:206 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:34:05:206 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263860929355778(Long)
+10:34:05:208 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:34:13:094 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:34:13:094 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263860929355778(Long)
+10:34:13:095 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:34:17:763 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:34:17:764 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263921033732098(Long)
+10:34:17:765 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:34:17:766 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:34:17:766 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774263921419522050(Long), 1774263921033732098(Long), 1774263921419522049(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:34:17.765841600(LocalDateTime)
+10:34:17:770 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:34:31:809 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:34:31:810 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263921033732098(Long)
+10:34:31:812 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:34:38:054 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:34:38:063 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774263921033732098(Long)
+10:34:38:065 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:34:43:655 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:34:43:655 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774264029590708226(Long)
+10:34:43:656 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:34:43:659 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:34:43:659 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774264030039412738(Long), 1774264029590708226(Long), 1774264030039412737(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:34:43.659345900(LocalDateTime)
+10:34:43:664 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:35:06:021 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:35:06:021 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774264123434065921(Long)
+10:35:06:022 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:35:06:024 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:35:06:025 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774264123824050178(Long), 1774264123434065921(Long), 1774264123824050177(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:35:06.023925400(LocalDateTime)
+10:35:06:028 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:35:08:569 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:35:08:569 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774264123434065921(Long)
+10:35:08:571 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:35:09:103 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:35:09:103 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774264123434065921(Long)
+10:35:09:104 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:35:16:845 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:35:16:846 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774264123434065921(Long)
+10:35:16:847 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:35:19:430 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:35:19:430 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774264123434065921(Long)
+10:35:19:431 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:35:24:844 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:35:24:845 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774264123434065921(Long)
+10:35:24:846 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:35:27:230 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:35:27:230 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774264123434065921(Long)
+10:35:27:231 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:35:33:807 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:35:33:808 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774264239985385473(Long)
+10:35:33:809 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:35:33:810 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:35:33:810 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774264240375369731(Long), 1774264239985385473(Long), 1774264240375369730(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:35:33.809523800(LocalDateTime)
+10:35:33:813 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:35:36:164 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:35:36:164 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774264239985385473(Long)
+10:35:36:165 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:35:38:426 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:35:38:427 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774264239985385473(Long)
+10:35:38:428 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:35:45:264 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:35:45:264 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774264239985385473(Long)
+10:35:45:266 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:36:06:408 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:36:06:408 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774264376694530050(Long)
+10:36:06:410 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:36:06:411 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:36:06:411 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774264377147428867(Long), 1774264376694530050(Long), 1774264377147428866(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:36:06.410628(LocalDateTime)
+10:36:06:414 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:36:41:876 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:36:41:876 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774264376694530050(Long)
+10:36:41:877 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:36:49:658 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:36:49:659 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774264376694530050(Long)
+10:36:49:660 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:38:54:772 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:38:54:773 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774265082696556546(Long)
+10:38:54:774 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:38:54:775 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:38:54:775 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774265083275284482(Long), 1774265082696556546(Long), 1774265083275284481(Long), 1(Long), balance(String), 352800(Integer), 5(Integer), 1(Integer), 2024-03-31T12:38:54.774818700(LocalDateTime)
+10:38:54:779 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:39:41:287 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:39:41:287 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774265277979156482(Long)
+10:39:41:289 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:39:41:290 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:39:41:290 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774265278432055299(Long), 1774265277979156482(Long), 1774265278432055298(Long), 1(Long), balance(String), 58800(Integer), 5(Integer), 1(Integer), 2024-03-31T12:39:41.290352(LocalDateTime)
+10:39:41:294 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:42:26:474 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:42:26:474 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774265277979156482(Long)
+10:42:26:475 DEBUG 10800 --- [http-nio-8086-exec-10] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:42:41:307 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:42:41:307 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774266033029373953(Long)
+10:42:41:309 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:42:41:309 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:42:41:310 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774266033482272770(Long), 1774266033029373953(Long), 1774266033482272769(Long), 1(Long), balance(String), 58800(Integer), 5(Integer), 1(Integer), 2024-03-31T12:42:41.309924400(LocalDateTime)
+10:42:41:313 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:42:55:882 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:42:55:882 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774264376694530050(Long)
+10:42:55:884 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 1
+10:43:33:811 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:43:33:811 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774266253163225089(Long)
+10:43:33:813 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:43:33:814 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:43:33:814 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774266253679038466(Long), 1774266253163225089(Long), 1774266253679038465(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:43:33.813783300(LocalDateTime)
+10:43:33:818 DEBUG 10800 --- [http-nio-8086-exec-2] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:43:52:898 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:43:52:898 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774266333228294145(Long)
+10:43:52:900 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:43:52:901 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:43:52:901 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774266333744107522(Long), 1774266333228294145(Long), 1774266333744107521(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:43:52.900663(LocalDateTime)
+10:43:52:904 DEBUG 10800 --- [http-nio-8086-exec-4] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:44:30:212 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:44:30:212 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774266489772302338(Long)
+10:44:30:213 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:44:30:216 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:44:30:217 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774266490225201155(Long), 1774266489772302338(Long), 1774266490225201154(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:44:30.216056100(LocalDateTime)
+10:44:30:219 DEBUG 10800 --- [http-nio-8086-exec-5] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:44:34:944 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:44:34:944 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774266509674274818(Long)
+10:44:34:945 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:44:34:946 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:44:34:946 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774266510060064771(Long), 1774266509674274818(Long), 1774266510060064770(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:44:34.945696100(LocalDateTime)
+10:44:34:949 DEBUG 10800 --- [http-nio-8086-exec-6] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:45:08:814 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:45:08:814 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774266643472572417(Long)
+10:45:08:816 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:45:08:817 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:45:08:817 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774266652171472898(Long), 1774266643472572417(Long), 1774266652171472897(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:45:08.816839300(LocalDateTime)
+10:45:08:820 DEBUG 10800 --- [http-nio-8086-exec-7] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:46:08:405 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:46:08:405 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774266894715576322(Long)
+10:46:08:406 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:46:08:407 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:46:08:407 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774266902089076738(Long), 1774266894715576322(Long), 1774266902089076737(Long), 1(Long), balance(String), 9700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:46:08.407362500(LocalDateTime)
+10:46:08:410 DEBUG 10800 --- [http-nio-8086-exec-8] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:46:31:439 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:46:31:440 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774266982716268545(Long)
+10:46:31:441 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:46:31:442 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:46:31:442 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774266998713257986(Long), 1774266982716268545(Long), 1774266998713257985(Long), 1(Long), balance(String), 221900(Integer), 5(Integer), 1(Integer), 2024-03-31T12:46:31.441679500(LocalDateTime)
+10:46:31:445 DEBUG 10800 --- [http-nio-8086-exec-9] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:51:34:022  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Server healthy check fail, currentConnection = 1711817982200_192.168.137.1_57458
+10:51:34:023  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+10:51:34:219  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [100c1f01-634e-4f10-a7b0-600eddb16324_config-0] Server healthy check fail, currentConnection = 1711817974253_192.168.137.1_57447
+10:51:34:219  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [100c1f01-634e-4f10-a7b0-600eddb16324_config-0] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+10:51:37:033 ERROR 10800 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.137.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 7 milliseconds, 428899 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@3ac55a94[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@3b5cb09d, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@2bea5f35, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@4b5e2e2e}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:51:37:232 ERROR 10800 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.137.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 11 milliseconds, 624999 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@2cab1c99[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@3b5cb09d, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@2bea5f35, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@4b5e2e2e}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:51:40:144 ERROR 10800 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.137.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 3 milliseconds, 234000 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@1f3ce7d[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@3b5cb09d, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@2bea5f35, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@4b5e2e2e}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:51:40:144  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Fail to connect server, after trying 1 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:51:40:348 ERROR 10800 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.137.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 7 milliseconds, 405301 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@763023e8[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@3b5cb09d, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@2bea5f35, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@4b5e2e2e}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:51:40:349  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [100c1f01-634e-4f10-a7b0-600eddb16324_config-0] Fail to connect server, after trying 1 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:51:43:353 ERROR 10800 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.137.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 4 milliseconds, 527600 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@f25697a[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@3b5cb09d, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@2bea5f35, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@4b5e2e2e}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:51:43:354  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Fail to connect server, after trying 2 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:51:43:568 ERROR 10800 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.137.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 14 milliseconds, 61301 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@6d500720[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@3b5cb09d, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@2bea5f35, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@4b5e2e2e}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:51:43:569  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [100c1f01-634e-4f10-a7b0-600eddb16324_config-0] Fail to connect server, after trying 2 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:51:46:661 ERROR 10800 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.137.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 613200 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@3017a451[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@3b5cb09d, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@2bea5f35, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@4b5e2e2e}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:51:46:662  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Fail to connect server, after trying 3 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:51:46:877 ERROR 10800 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.137.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 862400 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@593d23df[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@3b5cb09d, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@2bea5f35, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@4b5e2e2e}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:51:46:877  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [100c1f01-634e-4f10-a7b0-600eddb16324_config-0] Fail to connect server, after trying 3 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:51:49:699 ERROR 10800 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.137.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:566) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:445) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.io.grpc.Status.asRuntimeException(Status.java:533) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:490) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[nacos-client-2.0.4.jar:na]
+	... 3 common frames omitted
+Caused by: com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /192.168.137.128:9848
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:336) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:685) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:51:49:699 ERROR 10800 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.137.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:566) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:445) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.io.grpc.Status.asRuntimeException(Status.java:533) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:490) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[nacos-client-2.0.4.jar:na]
+	... 3 common frames omitted
+Caused by: com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /192.168.137.128:9848
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:336) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:685) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:51:49:699  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Fail to connect server, after trying 4 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:51:49:700  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [100c1f01-634e-4f10-a7b0-600eddb16324_config-0] Fail to connect server, after trying 4 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:51:49:975  WARN 10800 --- [nacos-grpc-client-executor-525] c.a.n.c.remote.client.grpc.GrpcClient    : [1711817982200_192.168.137.1_57458]Ignore error event,isRunning:false,isAbandon=false
+10:51:50:154  WARN 10800 --- [AMQP Connection 192.168.137.128:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occurred (Exception message: Connection reset)
+10:51:50:155  WARN 10800 --- [nacos-grpc-client-executor-536] c.a.n.c.remote.client.grpc.GrpcClient    : [1711817974253_192.168.137.1_57447]Ignore error event,isRunning:false,isAbandon=false
+10:51:52:234 ERROR 10800 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.137.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:566) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:445) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.io.grpc.Status.asRuntimeException(Status.java:533) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:490) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[nacos-client-2.0.4.jar:na]
+	... 3 common frames omitted
+Caused by: com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /192.168.137.128:9848
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:336) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:685) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:51:52:234 ERROR 10800 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.137.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:566) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:445) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.io.grpc.Status.asRuntimeException(Status.java:533) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:490) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[nacos-client-2.0.4.jar:na]
+	... 3 common frames omitted
+Caused by: com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /192.168.137.128:9848
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:336) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:685) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:51:52:234  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Fail to connect server, after trying 5 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:51:52:234  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [100c1f01-634e-4f10-a7b0-600eddb16324_config-0] Fail to connect server, after trying 5 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:51:54:878 ERROR 10800 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.137.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:566) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:445) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.io.grpc.Status.asRuntimeException(Status.java:533) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:490) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[nacos-client-2.0.4.jar:na]
+	... 3 common frames omitted
+Caused by: com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /192.168.137.128:9848
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:336) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:685) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:51:54:878 ERROR 10800 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.137.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:566) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:445) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.io.grpc.Status.asRuntimeException(Status.java:533) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:490) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[nacos-client-2.0.4.jar:na]
+	... 3 common frames omitted
+Caused by: com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /192.168.137.128:9848
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:336) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:685) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:51:54:879  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [100c1f01-634e-4f10-a7b0-600eddb16324_config-0] Fail to connect server, after trying 6 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:51:54:879  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Fail to connect server, after trying 6 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:51:57:615 ERROR 10800 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.137.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:566) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:445) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.io.grpc.Status.asRuntimeException(Status.java:533) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:490) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[nacos-client-2.0.4.jar:na]
+	... 3 common frames omitted
+Caused by: com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /192.168.137.128:9848
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:336) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:685) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:51:57:615 ERROR 10800 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.137.128 ,port 9848 is available , error ={}
+
+java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:566) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:445) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at com.alibaba.nacos.shaded.io.grpc.Status.asRuntimeException(Status.java:533) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:490) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:700) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:399) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:510) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:66) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:630) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:518) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:692) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:681) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123) ~[nacos-client-2.0.4.jar:na]
+	... 3 common frames omitted
+Caused by: com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /192.168.137.128:9848
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:336) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:685) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+10:51:57:616  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [100c1f01-634e-4f10-a7b0-600eddb16324_config-0] Fail to connect server, after trying 7 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:51:57:616  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Fail to connect server, after trying 7 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:52:01:065  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [100c1f01-634e-4f10-a7b0-600eddb16324_config-0] Fail to connect server, after trying 8 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:52:01:084  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Fail to connect server, after trying 8 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:52:01:992  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [100c1f01-634e-4f10-a7b0-600eddb16324_config-0] Fail to connect server, after trying 9 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:52:02:020  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Fail to connect server, after trying 9 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:52:02:674 ERROR 10800 --- [com.alibaba.nacos.client.naming.updater.3] com.alibaba.nacos.common.remote.client   : Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+10:52:02:781 ERROR 10800 --- [com.alibaba.nacos.client.naming.updater.3] com.alibaba.nacos.common.remote.client   : Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+10:52:02:889 ERROR 10800 --- [com.alibaba.nacos.client.naming.updater.3] com.alibaba.nacos.common.remote.client   : Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+10:52:03:014  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [100c1f01-634e-4f10-a7b0-600eddb16324_config-0] Fail to connect server, after trying 10 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:52:03:041  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Fail to connect server, after trying 10 times, last try server is {serverIp = '192.168.137.128', server main port = 8848}, error = unknown
+10:52:04:247  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [100c1f01-634e-4f10-a7b0-600eddb16324_config-0] Success to connect a server [192.168.137.128:8848], connectionId = 1711853525034_192.168.137.1_59995
+10:52:04:247  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [100c1f01-634e-4f10-a7b0-600eddb16324_config-0] Abandon prev connection, server is 192.168.137.128:8848, connectionId is 1711817974253_192.168.137.1_57447
+10:52:04:247  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1711817974253_192.168.137.1_57447
+10:52:04:248  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [100c1f01-634e-4f10-a7b0-600eddb16324_config-0] Notify disconnected event to listeners
+10:52:04:248  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [100c1f01-634e-4f10-a7b0-600eddb16324_config-0] Notify connected event to listeners.
+10:52:04:262  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Success to connect a server [192.168.137.128:8848], connectionId = 1711853525064_192.168.137.1_59997
+10:52:04:262  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Abandon prev connection, server is 192.168.137.128:8848, connectionId is 1711817982200_192.168.137.1_57458
+10:52:04:262  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1711817982200_192.168.137.1_57458
+10:52:04:263  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Notify disconnected event to listeners
+10:52:04:264  INFO 10800 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Notify connected event to listeners.
+10:52:05:633  INFO 10800 --- [nacos-grpc-client-executor-549] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Receive server push request, request = NotifySubscriberRequest, requestId = 2
+10:52:05:633  INFO 10800 --- [nacos-grpc-client-executor-549] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Ack server push request, request = NotifySubscriberRequest, requestId = 2
+10:52:05:733  INFO 10800 --- [nacos-grpc-client-executor-550] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Receive server push request, request = NotifySubscriberRequest, requestId = 9
+10:52:05:733  INFO 10800 --- [nacos-grpc-client-executor-550] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Ack server push request, request = NotifySubscriberRequest, requestId = 9
+10:52:07:843  INFO 10800 --- [nacos-grpc-client-executor-551] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Receive server push request, request = NotifySubscriberRequest, requestId = 21
+10:52:07:849  INFO 10800 --- [nacos-grpc-client-executor-551] com.alibaba.nacos.common.remote.client   : [3d37b446-4da6-4915-a18c-c98c1e58f917] Ack server push request, request = NotifySubscriberRequest, requestId = 21
+10:54:34:194  WARN 10800 --- [http-nio-8086-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@51f110c1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+10:54:34:198  WARN 10800 --- [http-nio-8086-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4f3117e4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+10:54:34:200  WARN 10800 --- [http-nio-8086-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1d06e74f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+10:54:34:204  WARN 10800 --- [http-nio-8086-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@44289b36 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+10:54:34:206  WARN 10800 --- [http-nio-8086-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@60a607e8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+10:54:34:209  WARN 10800 --- [http-nio-8086-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@276fa22f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+10:54:34:212  WARN 10800 --- [http-nio-8086-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@df91512 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+10:54:34:214  WARN 10800 --- [http-nio-8086-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@d88ceb0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+10:54:34:218  WARN 10800 --- [http-nio-8086-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5dc101ae (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+10:54:34:226  WARN 10800 --- [http-nio-8086-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@765aee3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+10:54:34:227 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:54:34:227 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774268987249647618(Long)
+10:54:34:233 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:54:34:233 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:54:34:234 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774269023706451969(Long), 1774268987249647618(Long), 1774269023643537409(Long), 1(Long), balance(String), 13700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:54:34.233239100(LocalDateTime)
+10:54:34:237 DEBUG 10800 --- [http-nio-8086-exec-1] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+10:54:50:183 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+10:54:50:183 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1774269090169479170(Long)
+10:54:50:184 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+10:54:50:185 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+10:54:50:185 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1774269090559463427(Long), 1774269090169479170(Long), 1774269090559463426(Long), 1(Long), balance(String), 13700(Integer), 5(Integer), 1(Integer), 2024-03-31T12:54:50.185402900(LocalDateTime)
+10:54:50:189 DEBUG 10800 --- [http-nio-8086-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
