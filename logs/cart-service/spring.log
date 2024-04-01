@@ -2920,3 +2920,27 @@ io.seata.common.exception.FrameworkException: can not register RM,err:can not co
 15:59:50:529 DEBUG 8900 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 2
 15:59:50:531 DEBUG 8900 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=2030774&ids=1533902 HTTP/1.1
 15:59:51:048 DEBUG 8900 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (516ms)
+16:33:17:235  WARN 8900 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:33:17:235  WARN 8900 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:33:17:236  WARN 8900 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:33:17:236  WARN 8900 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:33:17:244  INFO 8900 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+16:33:17:774  INFO 8900 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+16:33:18:786  INFO 8900 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+16:33:18:788  INFO 8900 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+16:33:18:981  INFO 8900 --- [nacos-grpc-client-executor-753] com.alibaba.nacos.common.remote.client   : [13bae3bc-5c46-4ab6-ac9a-d18bb77ce1ba] Receive server push request, request = NotifySubscriberRequest, requestId = 85
+16:33:18:987  INFO 8900 --- [nacos-grpc-client-executor-753] com.alibaba.nacos.common.remote.client   : [13bae3bc-5c46-4ab6-ac9a-d18bb77ce1ba] Ack server push request, request = NotifySubscriberRequest, requestId = 85
+16:33:19:107  INFO 8900 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+16:33:19:108  INFO 8900 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@6693184d[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+16:33:19:108  INFO 8900 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1711870279546_192.168.137.1_61605
+16:33:19:109  INFO 8900 --- [nacos-grpc-client-executor-754] c.a.n.c.remote.client.grpc.GrpcClient    : [1711870279546_192.168.137.1_61605]Ignore complete event,isRunning:false,isAbandon=false
+16:33:19:111  INFO 8900 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@30a0f43b[Running, pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 755]
+16:33:19:116  INFO 8900 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+16:33:19:126  INFO 8900 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+16:33:19:129  INFO 8900 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+16:33:19:133  INFO 8900 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x585f7885, L:/192.168.137.1:61590 ! R:/192.168.137.128:8099]
+16:33:19:133  INFO 8900 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0x585f7885, L:/192.168.137.1:61590 ! R:/192.168.137.128:8099]
+16:33:19:133  INFO 8900 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x585f7885, L:/192.168.137.1:61590 ! R:/192.168.137.128:8099]
+16:33:19:133  INFO 8900 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x585f7885, L:/192.168.137.1:61590 ! R:/192.168.137.128:8099]
+16:33:19:133  INFO 8900 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x585f7885, L:/192.168.137.1:61590 ! R:/192.168.137.128:8099]) will closed
+16:33:19:134  INFO 8900 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x585f7885, L:/192.168.137.1:61590 ! R:/192.168.137.128:8099]) will closed

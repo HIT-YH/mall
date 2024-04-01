@@ -4093,3 +4093,23 @@ java.lang.IllegalArgumentException: SimpleMessageConverter only supports String,
 15:59:28:368  INFO 21528 --- [rpcDispatch_RMROLE_1_2_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.137.128:8099:36534318609641505,branchId=36534318609641507,branchType=AT,resourceId=jdbc:mysql://192.168.137.128:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
 15:59:28:368  INFO 21528 --- [rpcDispatch_RMROLE_1_2_16] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.137.128:8099:36534318609641505 36534318609641507 jdbc:mysql://192.168.137.128:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
 15:59:28:368  INFO 21528 --- [rpcDispatch_RMROLE_1_2_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+16:33:08:432  WARN 21528 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:33:08:432  WARN 21528 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:33:08:434  WARN 21528 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:33:08:435  WARN 21528 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:33:08:441  INFO 21528 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+16:33:08:470  INFO 21528 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+16:33:09:243  INFO 21528 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+16:33:09:245  INFO 21528 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+16:33:09:573  INFO 21528 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+16:33:09:574  INFO 21528 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@567091c4[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+16:33:09:574  INFO 21528 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1711871951243_192.168.137.1_64457
+16:33:09:576  INFO 21528 --- [nacos-grpc-client-executor-420] c.a.n.c.remote.client.grpc.GrpcClient    : [1711871951243_192.168.137.1_64457]Ignore complete event,isRunning:false,isAbandon=false
+16:33:09:584  INFO 21528 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@71ab8ed6[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 421]
+16:33:09:607  INFO 21528 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+16:33:09:635  INFO 21528 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+16:33:09:638  INFO 21528 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+16:33:09:664  INFO 21528 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0xf8227430, L:/192.168.137.1:64446 ! R:/192.168.137.128:8099]
+16:33:09:665  INFO 21528 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0xf8227430, L:/192.168.137.1:64446 ! R:/192.168.137.128:8099]
+16:33:09:670  INFO 21528 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0xf8227430, L:/192.168.137.1:64446 ! R:/192.168.137.128:8099]
+16:33:09:672  INFO 21528 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0xf8227430, L:/192.168.137.1:64446 ! R:/192.168.137.128:8099]
