@@ -24,10 +24,12 @@ import java.util.List;
 @Service
 public class ItemServiceImpl extends ServiceImpl<ItemMapper, Item> implements IItemService {
 
+    private IItemService itemService;
+
     @Override
     @Transactional
     public void deductStock(List<OrderDetailDTO> items) {
-        String sqlStatement = "com.hmall.item.mapper.ItemMapper.updateStock";
+        String sqlStatement = "com.hmall.item.mapper.ItemMapper.reduceStock";
         boolean r = false;
         try {
             r = executeBatch(items, (sqlSession, entity) -> sqlSession.update(sqlStatement, entity));
@@ -44,4 +46,6 @@ public class ItemServiceImpl extends ServiceImpl<ItemMapper, Item> implements II
     public List<ItemDTO> queryItemByIds(Collection<Long> ids) {
         return BeanUtils.copyList(listByIds(ids), ItemDTO.class);
     }
+
+
 }

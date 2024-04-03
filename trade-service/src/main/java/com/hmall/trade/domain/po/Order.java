@@ -87,5 +87,4 @@ public class Order implements Serializable {
      */
     private LocalDateTime updateTime;
 
-
 }

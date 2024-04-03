@@ -20,4 +20,8 @@ public interface ItemClient {
 
     @PutMapping ("/items/stock/deduct")
     void deductStock(@RequestBody List<OrderDetailDTO> item);
+
+    @PutMapping ("/items/stock/add")
+    void addStock(@RequestParam("id") Long id , @RequestParam("num") Integer num);
+
 }

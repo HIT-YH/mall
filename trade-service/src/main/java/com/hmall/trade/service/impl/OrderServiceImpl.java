@@ -4,7 +4,10 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hmall.api.client.ItemClient;
 import com.hmall.api.dto.ItemDTO;
 import com.hmall.api.dto.OrderDetailDTO;
+import com.hmall.common.constants.MqConstants;
+import com.hmall.common.domain.MultiDelayMessage;
 import com.hmall.common.exception.BadRequestException;
+import com.hmall.common.mq.DelayMessageProcessor;
 import com.hmall.common.utils.UserContext;
 import com.hmall.trade.domain.dto.OrderFormDTO;
 import com.hmall.trade.domain.po.Order;
@@ -75,20 +78,33 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         List<OrderDetail> details = buildDetails(order.getId(), items, itemNumMap);
         detailService.saveBatch(details);
 
-        // 3.清理购物车商品
-//        cartClient.deleteCartItemByIds(itemIds);
-        try {
-            rabbitTemplate.convertAndSend("trade.topic","order.create",itemIds);
-        } catch (AmqpException e) {
-            log.error("创建订单时，清理购物车商品失败",e);
-        }
-
-        // 4.扣减库存
+        // 3.扣减库存
         try {
             itemClient.deductStock(detailDTOS);
         } catch (Exception e) {
             throw new RuntimeException("库存不足！");
         }
+
+        // 4.清理购物车商品
+//        cartClient.deleteCartItemByIds(itemIds);
+        try {
+            rabbitTemplate.convertAndSend(MqConstants.TRADE_EXCHANGE_NAME,MqConstants.ORDER_CREATE_KEY,itemIds);
+        } catch (AmqpException e) {
+            log.error("创建订单时，清理购物车商品失败",e);
+        }
+
+
+
+        // 5. 延迟检测订单状态的消息
+        try {
+            MultiDelayMessage<Long> msg = MultiDelayMessage.of(order.getId(),
+                    10000L, 10000L, 10000L, 15000L, 15000L);
+            rabbitTemplate.convertAndSend(MqConstants.DELAY_EXCHANGE, MqConstants.DELAY_ORDER_ROUTING_KEY, msg,
+                    new DelayMessageProcessor(msg.removeNextDelay().intValue()));
+        }catch (AmqpException e){
+            log.error("延迟消息检查发送异常",e);
+        }
+
         return order.getId();
     }
 
@@ -116,4 +132,23 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         }
         return details;
     }
+
+
+    @Override
+    @GlobalTransactional
+    public void cancelOrder(Long orderId){
+        //取消订单
+        lambdaUpdate()
+                .set(Order::getStatus,5)
+                .set(Order::getCloseTime,LocalDateTime.now())
+                .eq(Order::getId,orderId)
+                .update();
+
+        //6.恢复库存
+        OrderDetail orderDetail = detailService.lambdaQuery()
+                .eq(OrderDetail::getOrderId, orderId).one();
+        itemClient.addStock(orderDetail.getItemId(),orderDetail.getNum());
+
+    }
+
 }

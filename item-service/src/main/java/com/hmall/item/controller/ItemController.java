@@ -12,10 +12,12 @@ import com.hmall.item.service.IItemService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Slf4j
 @Api(tags = "商品管理相关接口")
 @RestController
 @RequestMapping("/items")
@@ -86,4 +88,15 @@ public class ItemController {
     public void deductStock(@RequestBody List<OrderDetailDTO> items){
         itemService.deductStock(items);
     }
+
+    @ApiOperation("增加指定商品的库存")
+    @PutMapping("/stock/add")
+    public void addStock(@RequestParam("id") Long id , @RequestParam("num") Integer num){
+        Item item = itemService.getById(id);
+        itemService.lambdaUpdate()
+                .set(Item::getStock,item.getStock() + num)
+                .eq(Item::getId,id).update();
+        log.debug("恢复库存成功");
+    }
+
 }

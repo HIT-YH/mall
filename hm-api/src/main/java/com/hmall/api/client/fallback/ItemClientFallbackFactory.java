@@ -27,6 +27,12 @@ public class ItemClientFallbackFactory implements FallbackFactory<ItemClient> {
             public void deductStock(List<OrderDetailDTO> item) {
                 throw new RuntimeException(cause);
             }
+
+
+            @Override
+            public void addStock(Long id, Integer num) {
+                throw new RuntimeException(cause);
+            }
         };
     }
 }
