@@ -48,7 +48,7 @@ public class PayController {
         payOrderService.tryPayOrderByBalance(payOrderFormDTO);
     }
 
-    @ApiOperation("尝试基于用户余额支付")
+    @ApiOperation("判断支付单是否已经支付")
     @GetMapping("getStatus")
     public Boolean isPayByPayOrder(@RequestParam("Biz_id") Long Biz_id){
         PayOrder payOrder = payOrderService.lambdaQuery()

@@ -91,12 +91,9 @@ public class ItemController {
 
     @ApiOperation("增加指定商品的库存")
     @PutMapping("/stock/add")
-    public void addStock(@RequestParam("id") Long id , @RequestParam("num") Integer num){
-        Item item = itemService.getById(id);
-        itemService.lambdaUpdate()
-                .set(Item::getStock,item.getStock() + num)
-                .eq(Item::getId,id).update();
-        log.debug("恢复库存成功");
+    public void addStock(@RequestBody List<OrderDetailDTO> items){
+        itemService.addStock(items);
+
     }
 
 }

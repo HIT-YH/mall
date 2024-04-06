@@ -24,7 +24,6 @@ import java.util.List;
 @Service
 public class ItemServiceImpl extends ServiceImpl<ItemMapper, Item> implements IItemService {
 
-    private IItemService itemService;
 
     @Override
     @Transactional
@@ -41,6 +40,25 @@ public class ItemServiceImpl extends ServiceImpl<ItemMapper, Item> implements II
             throw new BizIllegalException("库存不足！");
         }
     }
+
+
+    @Override
+    @Transactional
+    public void addStock(List<OrderDetailDTO> items) {
+        for (OrderDetailDTO itemDTO : items) {
+            Long id = itemDTO.getItemId();
+            Integer num = itemDTO.getNum();
+            System.out.println("商品 "+id+" 恢复库存 "+num+" 个");
+            Item item = getById(id);
+            lambdaUpdate()
+                    .set(Item::getStock,item.getStock() + num)
+                    .eq(Item::getId,id).update();
+        }
+
+        log.debug("恢复库存成功");
+
+    }
+
 
     @Override
     public List<ItemDTO> queryItemByIds(Collection<Long> ids) {

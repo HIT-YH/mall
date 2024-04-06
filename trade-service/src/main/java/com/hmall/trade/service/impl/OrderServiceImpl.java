@@ -94,7 +94,6 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         }
 
 
-
         // 5. 延迟检测订单状态的消息
         try {
             MultiDelayMessage<Long> msg = MultiDelayMessage.of(order.getId(),
@@ -137,7 +136,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     @Override
     @GlobalTransactional
     public void cancelOrder(Long orderId){
-        //取消订单
+        //改变订单状态。取消订单
         lambdaUpdate()
                 .set(Order::getStatus,5)
                 .set(Order::getCloseTime,LocalDateTime.now())
@@ -145,9 +144,17 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
                 .update();
 
         //6.恢复库存
-        OrderDetail orderDetail = detailService.lambdaQuery()
-                .eq(OrderDetail::getOrderId, orderId).one();
-        itemClient.addStock(orderDetail.getItemId(),orderDetail.getNum());
+        List<OrderDetail> orderDetails = detailService.lambdaQuery()
+                .eq(OrderDetail::getOrderId, orderId).list();
+
+        List<OrderDetailDTO> items = new ArrayList<OrderDetailDTO>();
+
+        for (OrderDetail orderDetail : orderDetails) {
+            items.add(new OrderDetailDTO().setItemId(orderDetail.getItemId()).setNum(orderDetail.getNum()));
+        }
+
+        itemClient.addStock(items);
+
 
     }
 

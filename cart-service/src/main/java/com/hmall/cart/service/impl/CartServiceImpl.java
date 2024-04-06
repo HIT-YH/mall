@@ -117,7 +117,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 //        }
 //        List<ItemDTO> items = response.getBody();
 
-        //基于openfeign和loadbalancer，剪接地实现获取服务提供者，负载均衡，发起http请求获得数据
+        //基于openfeign和loadbalancer，间接地实现获取服务提供者，负载均衡，发起http请求获得数据
         List<ItemDTO> items = itemClient.queryItemByIds(itemIds);
 
         if (CollUtils.isEmpty(items)) {

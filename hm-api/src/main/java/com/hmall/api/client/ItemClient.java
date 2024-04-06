@@ -19,9 +19,9 @@ public interface ItemClient {
     List<ItemDTO> queryItemByIds(@RequestParam("ids") Collection<Long> ids);
 
     @PutMapping ("/items/stock/deduct")
-    void deductStock(@RequestBody List<OrderDetailDTO> item);
+    void deductStock(@RequestBody List<OrderDetailDTO> items);
 
     @PutMapping ("/items/stock/add")
-    void addStock(@RequestParam("id") Long id , @RequestParam("num") Integer num);
+    void addStock(@RequestBody List<OrderDetailDTO> items);
 
 }
