@@ -7,4 +7,4 @@ hm:
   swagger:
     title: "黑马商城商品接口文档"
     package: com.hmall.item.controller
-    description: "黑马商城商品车接口文档"
+    description: "黑马商城商品接口文档"

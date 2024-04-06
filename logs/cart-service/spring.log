@@ -1,541 +1,215 @@
-21:52:25:919  INFO 12744 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
-21:52:27:835  INFO 12744 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c0bc9165-ae78-3bb1-9c93-70219a1bc65b
-21:52:27:953  INFO 12744 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:52:27:954  INFO 12744 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:52:27:955  INFO 12744 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:52:28:003  INFO 12744 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:52:28:010  INFO 12744 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:52:28:012  INFO 12744 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:52:28:013  INFO 12744 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$570/0x0000000800661440] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:52:28:014  INFO 12744 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:52:28:020  INFO 12744 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:52:28:025  INFO 12744 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:52:28:028  INFO 12744 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
-21:52:28:138  INFO 12744 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
-21:52:28:146  INFO 12744 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
-21:52:28:256  INFO 12744 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
-21:52:28:368  INFO 12744 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
-21:52:28:406  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of ede6d6d3-9f10-4775-b5e0-718acf564ed1
-21:52:28:406  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [ede6d6d3-9f10-4775-b5e0-718acf564ed1] RpcClient init label, labels = {module=naming, source=sdk}
-21:52:28:408  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [ede6d6d3-9f10-4775-b5e0-718acf564ed1] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
-21:52:28:408  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [ede6d6d3-9f10-4775-b5e0-718acf564ed1] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
-21:52:28:409  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [ede6d6d3-9f10-4775-b5e0-718acf564ed1] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
-21:52:28:409  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [ede6d6d3-9f10-4775-b5e0-718acf564ed1] Try to connect to server on start up, server: {serverIp = '192.168.137.128', server main port = 8848}
-21:52:28:542  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [ede6d6d3-9f10-4775-b5e0-718acf564ed1] Success to connect to server [192.168.137.128:8848] on start up, connectionId = 1712325148617_192.168.137.1_62658
-21:52:28:543  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [ede6d6d3-9f10-4775-b5e0-718acf564ed1] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
-21:52:28:543  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [ede6d6d3-9f10-4775-b5e0-718acf564ed1] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$476/0x0000000800420840
-21:52:28:543  INFO 12744 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [ede6d6d3-9f10-4775-b5e0-718acf564ed1] Notify connected event to listeners.
-21:52:28:689 ERROR 12744 --- [main] i.s.c.r.netty.NettyClientChannelManager  : no available service found in cluster 'default', please make sure registry config correct and keep your seata server running
-21:52:28:689  INFO 12744 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[cart-service] txServiceGroup[hmall]
-21:52:28:703  INFO 12744 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
-21:52:28:704  INFO 12744 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
-21:52:28:714  INFO 12744 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
-21:52:28:715  INFO 12744 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[cart-service] txServiceGroup[hmall]
-21:52:28:715  INFO 12744 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
-21:52:28:718  INFO 12744 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:52:29:080  INFO 12744 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:52:29:085  INFO 12744 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-21:52:29:187  INFO 12744 --- [nacos-grpc-client-executor-4] com.alibaba.nacos.common.remote.client   : [ede6d6d3-9f10-4775-b5e0-718acf564ed1] Receive server push request, request = NotifySubscriberRequest, requestId = 1
-21:52:29:197  INFO 12744 --- [nacos-grpc-client-executor-4] com.alibaba.nacos.common.remote.client   : [ede6d6d3-9f10-4775-b5e0-718acf564ed1] Ack server push request, request = NotifySubscriberRequest, requestId = 1
-21:52:30:917  INFO 12744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-21:52:30:919  INFO 12744 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
-21:52:30:920  INFO 12744 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-21:52:30:920  INFO 12744 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
-21:52:30:920  INFO 12744 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-21:52:30:938  INFO 12744 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-21:52:30:951  INFO 12744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-21:52:30:951  INFO 12744 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-21:52:31:775  INFO 12744 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-21:52:31:775  INFO 12744 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5822 ms
-21:52:32:546  INFO 12744 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
-21:52:34:021  INFO 12744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-21:52:34:914  INFO 12744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-21:52:35:302 ERROR 12744 --- [main] i.s.c.r.netty.NettyClientChannelManager  : no available service found in cluster 'default', please make sure registry config correct and keep your seata server running
-21:52:41:369  INFO 12744 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
-21:52:45:189  INFO 12744 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-21:52:50:601  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 1f154241-d956-4647-b869-efb0f2e8ddb0
-21:52:50:601  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] RpcClient init label, labels = {module=naming, source=sdk}
-21:52:50:601  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
-21:52:50:602  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
-21:52:50:602  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
-21:52:50:602  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Try to connect to server on start up, server: {serverIp = '192.168.137.128', server main port = 8848}
-21:52:51:053  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Success to connect to server [192.168.137.128:8848] on start up, connectionId = 1712325171023_192.168.137.1_62776
-21:52:51:054  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
-21:52:51:054  INFO 12744 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Notify connected event to listeners.
-21:52:51:055  INFO 12744 --- [main] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$476/0x0000000800420840
-21:52:51:173  INFO 12744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-21:52:51:219  INFO 12744 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 192.168.137.1:8082 register finished
-21:52:51:701  INFO 12744 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Receive server push request, request = NotifySubscriberRequest, requestId = 5
-21:52:51:714  INFO 12744 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Ack server push request, request = NotifySubscriberRequest, requestId = 5
-21:52:54:136  INFO 12744 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-21:52:54:146  INFO 12744 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-21:52:54:197  INFO 12744 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-21:52:54:483  INFO 12744 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.137.128:5672]
-21:52:55:501  INFO 12744 --- [main] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start: java.net.SocketTimeoutException: connect timed out
-21:52:55:521  INFO 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.137.128:5672]
-21:52:56:532 ERROR 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
-
-org.springframework.amqp.AmqpIOException: java.net.SocketTimeoutException: connect timed out
-	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70) ~[spring-rabbit-2.4.12.jar:2.4.12]
-	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603) ~[spring-rabbit-2.4.12.jar:2.4.12]
-	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725) ~[spring-rabbit-2.4.12.jar:2.4.12]
-	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252) ~[spring-rabbit-2.4.12.jar:2.4.12]
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2210) ~[spring-rabbit-2.4.12.jar:2.4.12]
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183) ~[spring-rabbit-2.4.12.jar:2.4.12]
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2163) ~[spring-rabbit-2.4.12.jar:2.4.12]
-	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:463) ~[spring-rabbit-2.4.12.jar:2.4.12]
-	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:447) ~[spring-rabbit-2.4.12.jar:2.4.12]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1942) ~[spring-rabbit-2.4.12.jar:2.4.12]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1915) ~[spring-rabbit-2.4.12.jar:2.4.12]
-	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1384) ~[spring-rabbit-2.4.12.jar:2.4.12]
-	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1230) ~[spring-rabbit-2.4.12.jar:2.4.12]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: java.net.SocketTimeoutException: connect timed out
-	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method) ~[na:na]
-	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[na:na]
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:na]
-	at java.base/java.net.Socket.connect(Socket.java:608) ~[na:na]
-	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.14.2.jar:5.14.2]
-	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223) ~[amqp-client-5.14.2.jar:5.14.2]
-	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173) ~[amqp-client-5.14.2.jar:5.14.2]
-	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641) ~[spring-rabbit-2.4.12.jar:2.4.12]
-	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616) ~[spring-rabbit-2.4.12.jar:2.4.12]
-	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566) ~[spring-rabbit-2.4.12.jar:2.4.12]
-	... 12 common frames omitted
-
-21:52:56:537  INFO 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.137.128:5672]
-21:52:57:560  INFO 12744 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 41.45 seconds (JVM running for 43.951)
-21:52:57:568  INFO 12744 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service, group=DEFAULT_GROUP
-21:52:57:581  INFO 12744 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service.yaml, group=DEFAULT_GROUP
-21:52:57:582  INFO 12744 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service-local.yaml, group=DEFAULT_GROUP
-21:53:02:709  INFO 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1c4335c8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-21:53:02:765  INFO 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.137.128:5672]
-21:53:03:770 ERROR 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
-21:53:03:770  INFO 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.137.128:5672]
-21:53:04:378  INFO 12744 --- [nacos-grpc-client-executor-13] com.alibaba.nacos.common.remote.client   : [ede6d6d3-9f10-4775-b5e0-718acf564ed1] Receive server push request, request = NotifySubscriberRequest, requestId = 8
-21:53:04:411  INFO 12744 --- [nacos-grpc-client-executor-13] com.alibaba.nacos.common.remote.client   : [ede6d6d3-9f10-4775-b5e0-718acf564ed1] Ack server push request, request = NotifySubscriberRequest, requestId = 8
-21:53:09:952  INFO 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3949d6b6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-21:53:09:953  INFO 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.137.128:5672]
-21:53:10:004  INFO 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#1a557a52:5/SimpleConnection@77b9ecc7 [delegate=amqp://hmall@192.168.137.128:5672//hmall, localPort= 62869]
-21:53:28:372 ERROR 12744 --- [timeoutChecker_1_1] i.s.c.r.netty.NettyClientChannelManager  : no available service found in cluster 'default', please make sure registry config correct and keep your seata server running
-21:53:28:726 ERROR 12744 --- [timeoutChecker_2_1] i.s.c.r.netty.NettyClientChannelManager  : no available service found in cluster 'default', please make sure registry config correct and keep your seata server running
-21:53:38:368  INFO 12744 --- [timeoutChecker_1_1] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.137.128:8099
-21:53:38:721  INFO 12744 --- [timeoutChecker_2_1] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.137.128:8099
-21:53:38:721  INFO 12744 --- [timeoutChecker_2_1] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://192.168.137.128:3306/hm-cart
-21:53:38:724  INFO 12744 --- [timeoutChecker_2_1] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:192.168.137.128:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://192.168.137.128:3306/hm-cart', applicationId='cart-service', transactionServiceGroup='hmall'} >
-21:53:39:056  INFO 12744 --- [timeoutChecker_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:192.168.137.128:8099,msg:< RegisterTMRequest{applicationId='cart-service', transactionServiceGroup='hmall'} >
-21:53:39:534  INFO 12744 --- [timeoutChecker_2_1] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0xa43c594f, L:/192.168.137.1:62981 - R:/192.168.137.128:8099]
-21:53:39:534  INFO 12744 --- [timeoutChecker_1_1] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x55eda4cb, L:/192.168.137.1:62982 - R:/192.168.137.128:8099]
-21:53:39:539  INFO 12744 --- [timeoutChecker_2_1] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 55 ms, version:1.5.2,role:RMROLE,channel:[id: 0xa43c594f, L:/192.168.137.1:62981 - R:/192.168.137.128:8099]
-21:53:39:539  INFO 12744 --- [timeoutChecker_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 55 ms, version:1.5.2,role:TMROLE,channel:[id: 0x55eda4cb, L:/192.168.137.1:62982 - R:/192.168.137.128:8099]
-21:54:30:949  INFO 12744 --- [http-nio-8082-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-21:54:30:949  INFO 12744 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-21:54:30:951  INFO 12744 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-21:54:31:174 DEBUG 12744 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-21:54:31:193 DEBUG 12744 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-21:54:31:212 DEBUG 12744 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-21:54:31:261 DEBUG 12744 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-21:54:31:914  INFO 12744 --- [nacos-grpc-client-executor-30] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Receive server push request, request = NotifySubscriberRequest, requestId = 16
-21:54:31:915  INFO 12744 --- [nacos-grpc-client-executor-30] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Ack server push request, request = NotifySubscriberRequest, requestId = 16
-21:54:32:293 DEBUG 12744 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (1031ms)
-21:54:34:538 DEBUG 12744 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-21:54:34:538 DEBUG 12744 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-21:54:34:541 DEBUG 12744 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-21:54:34:543 DEBUG 12744 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-21:54:35:069 DEBUG 12744 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (526ms)
-21:54:43:806 DEBUG 12744 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
-21:54:43:806 DEBUG 12744 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 2(Integer), 27(Long)
-21:54:43:810 DEBUG 12744 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
-21:54:43:832 DEBUG 12744 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-21:54:43:832 DEBUG 12744 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-21:54:43:834 DEBUG 12744 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-21:54:43:835 DEBUG 12744 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-21:54:44:346 DEBUG 12744 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (510ms)
-21:54:44:767 DEBUG 12744 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
-21:54:44:767 DEBUG 12744 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 3(Integer), 27(Long)
-21:54:44:771 DEBUG 12744 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
-21:54:44:798 DEBUG 12744 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-21:54:44:798 DEBUG 12744 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-21:54:44:801 DEBUG 12744 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-21:54:44:804 DEBUG 12744 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-21:54:45:331 DEBUG 12744 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (527ms)
-21:54:45:764 DEBUG 12744 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
-21:54:45:764 DEBUG 12744 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 4(Integer), 27(Long)
-21:54:45:768 DEBUG 12744 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
-21:54:45:795 DEBUG 12744 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-21:54:45:795 DEBUG 12744 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-21:54:45:797 DEBUG 12744 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-21:54:45:798 DEBUG 12744 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-21:54:46:309 DEBUG 12744 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (511ms)
-21:54:46:699 DEBUG 12744 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
-21:54:46:700 DEBUG 12744 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 5(Integer), 27(Long)
-21:54:46:703 DEBUG 12744 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
-21:54:46:730 DEBUG 12744 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-21:54:46:731 DEBUG 12744 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-21:54:46:732 DEBUG 12744 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-21:54:46:733 DEBUG 12744 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-21:54:47:247 DEBUG 12744 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (513ms)
-21:54:47:496 DEBUG 12744 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
-21:54:47:496 DEBUG 12744 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 6(Integer), 27(Long)
-21:54:47:499 DEBUG 12744 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
-21:54:47:526 DEBUG 12744 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-21:54:47:526 DEBUG 12744 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-21:54:47:528 DEBUG 12744 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-21:54:47:529 DEBUG 12744 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-21:54:48:040 DEBUG 12744 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (510ms)
-21:54:49:220 DEBUG 12744 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
-21:54:49:221 DEBUG 12744 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 9(Integer), 25(Long)
-21:54:49:224 DEBUG 12744 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
-21:54:49:251 DEBUG 12744 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-21:54:49:251 DEBUG 12744 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-21:54:49:253 DEBUG 12744 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-21:54:49:254 DEBUG 12744 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-21:54:49:763 DEBUG 12744 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (509ms)
-21:54:49:855 DEBUG 12744 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
-21:54:49:856 DEBUG 12744 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 8(Integer), 25(Long)
-21:54:49:859 DEBUG 12744 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
-21:54:49:887 DEBUG 12744 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-21:54:49:887 DEBUG 12744 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-21:54:49:889 DEBUG 12744 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-21:54:49:890 DEBUG 12744 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-21:54:50:400 DEBUG 12744 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (509ms)
-21:54:50:635 DEBUG 12744 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
-21:54:50:635 DEBUG 12744 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 7(Integer), 25(Long)
-21:54:50:638 DEBUG 12744 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
-21:54:50:664 DEBUG 12744 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-21:54:50:665 DEBUG 12744 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-21:54:50:666 DEBUG 12744 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-21:54:50:667 DEBUG 12744 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-21:54:51:180 DEBUG 12744 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (513ms)
-21:54:51:396 DEBUG 12744 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
-21:54:51:396 DEBUG 12744 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 6(Integer), 25(Long)
-21:54:51:399 DEBUG 12744 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
-21:54:51:425 DEBUG 12744 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-21:54:51:425 DEBUG 12744 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-21:54:51:427 DEBUG 12744 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-21:54:51:428 DEBUG 12744 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-21:54:51:940 DEBUG 12744 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (511ms)
-21:54:52:639 DEBUG 12744 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
-21:54:52:639 DEBUG 12744 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 5(Integer), 25(Long)
-21:54:52:643 DEBUG 12744 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
-21:54:52:670 DEBUG 12744 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-21:54:52:670 DEBUG 12744 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-21:54:52:671 DEBUG 12744 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-21:54:52:672 DEBUG 12744 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-21:54:53:180 DEBUG 12744 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (507ms)
-21:54:53:616 DEBUG 12744 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
-21:54:53:616 DEBUG 12744 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 5(Integer), 27(Long)
-21:54:53:619 DEBUG 12744 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
-21:54:53:627 DEBUG 12744 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-21:54:53:627 DEBUG 12744 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-21:54:53:629 DEBUG 12744 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-21:54:53:629 DEBUG 12744 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-21:54:54:142 DEBUG 12744 --- [http-nio-8082-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (512ms)
-21:56:02:913  INFO 12744 --- [rpcDispatch_RMROLE_1_1_16] i.s.c.r.p.client.RmUndoLogProcessor      : rm handle undo log process:UndoLogDeleteRequest{resourceId='jdbc:mysql://192.168.137.128:3306/hm-cart', saveDays=7, branchType=AT}
-21:56:27:458 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?,?))
-21:56:27:458 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: null, 1533902(Long), 1713453(Long)
-21:56:27:460 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 0
-22:01:47:227 DEBUG 12744 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-22:01:47:227 DEBUG 12744 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-22:01:47:231 DEBUG 12744 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-22:01:47:232 DEBUG 12744 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-22:01:47:784 DEBUG 12744 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (551ms)
-22:02:24:450 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?,?))
-22:02:24:451 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: null, 1533902(Long), 1713453(Long)
-22:02:24:452 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 0
-22:06:10:301  INFO 12744 --- [nacos-grpc-client-executor-172] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Receive server push request, request = NotifySubscriberRequest, requestId = 28
-22:06:10:309  INFO 12744 --- [nacos-grpc-client-executor-172] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Ack server push request, request = NotifySubscriberRequest, requestId = 28
-22:06:20:572 DEBUG 12744 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-22:06:20:573 DEBUG 12744 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-22:06:20:574 DEBUG 12744 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-22:06:20:575 DEBUG 12744 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-22:06:20:576  WARN 12744 --- [http-nio-8082-exec-2] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: item-service
-22:06:20:577  WARN 12744 --- [http-nio-8082-exec-2] RetryableFeignBlockingLoadBalancerClient : Service instance was not resolved, executing the original request
-22:06:22:341 DEBUG 12744 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-22:06:22:342 DEBUG 12744 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-22:06:22:344 DEBUG 12744 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-22:06:22:345 DEBUG 12744 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-22:06:22:346  WARN 12744 --- [http-nio-8082-exec-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: item-service
-22:06:22:346  WARN 12744 --- [http-nio-8082-exec-1] RetryableFeignBlockingLoadBalancerClient : Service instance was not resolved, executing the original request
-22:06:31:901  WARN 12744 --- [http-nio-8082-exec-2] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: item-service
-22:06:31:901  WARN 12744 --- [http-nio-8082-exec-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: item-service
-22:06:31:901  WARN 12744 --- [http-nio-8082-exec-2] RetryableFeignBlockingLoadBalancerClient : Service instance was not resolved, executing the original request
-22:06:31:902  WARN 12744 --- [http-nio-8082-exec-1] RetryableFeignBlockingLoadBalancerClient : Service instance was not resolved, executing the original request
-22:06:31:902 DEBUG 12744 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- ERROR UnknownHostException: item-service (11326ms)
-22:06:31:902 DEBUG 12744 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- ERROR UnknownHostException: item-service (9557ms)
-22:06:31:905 ERROR 12744 --- [http-nio-8082-exec-2] c.h.a.c.f.ItemClientFallbackFactory      : 查询商品异常，异常原因：
-
-feign.RetryableException: item-service executing GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207
-	at feign.FeignException.errorExecuting(FeignException.java:268) ~[feign-core-11.8.jar:na]
-	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:129) ~[feign-core-11.8.jar:na]
-	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-11.8.jar:na]
-	at com.alibaba.cloud.sentinel.feign.SentinelInvocationHandler.invoke(SentinelInvocationHandler.java:109) ~[spring-cloud-starter-alibaba-sentinel-2021.0.4.0.jar:2021.0.4.0]
-	at com.sun.proxy.$Proxy133.queryItemByIds(Unknown Source) ~[na:na]
-	at com.hmall.cart.service.impl.CartServiceImpl.handleCartItems(CartServiceImpl.java:121) ~[classes/:na]
-	at com.hmall.cart.service.impl.CartServiceImpl.queryMyCarts(CartServiceImpl.java:85) ~[classes/:na]
-	at com.hmall.cart.service.impl.CartServiceImpl$$FastClassBySpringCGLIB$$7813828f.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.27.jar:5.3.27]
-	at com.hmall.cart.service.impl.CartServiceImpl$$EnhancerBySpringCGLIB$$368b7033.queryMyCarts(<generated>) ~[classes/:na]
-	at com.hmall.cart.controller.CartController.queryMyCarts(CartController.java:47) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: java.net.UnknownHostException: item-service
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1527) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1380) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302) ~[na:na]
-	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154) ~[okhttp-4.9.3.jar:na]
-	at feign.okhttp.OkHttpClient.execute(OkHttpClient.java:172) ~[feign-okhttp-11.8.jar:na]
-	at org.springframework.cloud.openfeign.loadbalancer.LoadBalancerUtils.executeWithLoadBalancerLifecycleProcessing(LoadBalancerUtils.java:57) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
-	at org.springframework.cloud.openfeign.loadbalancer.RetryableFeignBlockingLoadBalancerClient.lambda$execute$2(RetryableFeignBlockingLoadBalancerClient.java:167) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
-	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:329) ~[spring-retry-1.3.4.jar:na]
-	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:225) ~[spring-retry-1.3.4.jar:na]
-	at org.springframework.cloud.openfeign.loadbalancer.RetryableFeignBlockingLoadBalancerClient.execute(RetryableFeignBlockingLoadBalancerClient.java:113) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
-	at com.alibaba.cloud.seata.feign.SeataFeignClient.execute(SeataFeignClient.java:59) ~[spring-cloud-starter-alibaba-seata-2021.0.4.0.jar:2021.0.4.0]
-	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:119) ~[feign-core-11.8.jar:na]
-	... 62 common frames omitted
-
-22:06:31:905 ERROR 12744 --- [http-nio-8082-exec-1] c.h.a.c.f.ItemClientFallbackFactory      : 查询商品异常，异常原因：
-
-feign.RetryableException: item-service executing GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207
-	at feign.FeignException.errorExecuting(FeignException.java:268) ~[feign-core-11.8.jar:na]
-	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:129) ~[feign-core-11.8.jar:na]
-	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-11.8.jar:na]
-	at com.alibaba.cloud.sentinel.feign.SentinelInvocationHandler.invoke(SentinelInvocationHandler.java:109) ~[spring-cloud-starter-alibaba-sentinel-2021.0.4.0.jar:2021.0.4.0]
-	at com.sun.proxy.$Proxy133.queryItemByIds(Unknown Source) ~[na:na]
-	at com.hmall.cart.service.impl.CartServiceImpl.handleCartItems(CartServiceImpl.java:121) ~[classes/:na]
-	at com.hmall.cart.service.impl.CartServiceImpl.queryMyCarts(CartServiceImpl.java:85) ~[classes/:na]
-	at com.hmall.cart.service.impl.CartServiceImpl$$FastClassBySpringCGLIB$$7813828f.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.27.jar:5.3.27]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.27.jar:5.3.27]
-	at com.hmall.cart.service.impl.CartServiceImpl$$EnhancerBySpringCGLIB$$368b7033.queryMyCarts(<generated>) ~[classes/:na]
-	at com.hmall.cart.controller.CartController.queryMyCarts(CartController.java:47) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: java.net.UnknownHostException: item-service
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1527) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1380) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302) ~[na:na]
-	at okhttp3.Dns$Companion$DnsSystem.lookup(Dns.kt:49) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.RouteSelector.resetNextInetSocketAddress(RouteSelector.kt:164) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.RouteSelector.nextProxy(RouteSelector.kt:129) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.RouteSelector.next(RouteSelector.kt:71) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:205) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201) ~[okhttp-4.9.3.jar:na]
-	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154) ~[okhttp-4.9.3.jar:na]
-	at feign.okhttp.OkHttpClient.execute(OkHttpClient.java:172) ~[feign-okhttp-11.8.jar:na]
-	at org.springframework.cloud.openfeign.loadbalancer.LoadBalancerUtils.executeWithLoadBalancerLifecycleProcessing(LoadBalancerUtils.java:57) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
-	at org.springframework.cloud.openfeign.loadbalancer.RetryableFeignBlockingLoadBalancerClient.lambda$execute$2(RetryableFeignBlockingLoadBalancerClient.java:167) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
-	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:329) ~[spring-retry-1.3.4.jar:na]
-	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:225) ~[spring-retry-1.3.4.jar:na]
-	at org.springframework.cloud.openfeign.loadbalancer.RetryableFeignBlockingLoadBalancerClient.execute(RetryableFeignBlockingLoadBalancerClient.java:113) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
-	at com.alibaba.cloud.seata.feign.SeataFeignClient.execute(SeataFeignClient.java:59) ~[spring-cloud-starter-alibaba-seata-2021.0.4.0.jar:2021.0.4.0]
-	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:119) ~[feign-core-11.8.jar:na]
-	... 62 common frames omitted
-
-22:06:33:500  INFO 12744 --- [nacos-grpc-client-executor-178] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Receive server push request, request = NotifySubscriberRequest, requestId = 31
-22:06:33:505  INFO 12744 --- [nacos-grpc-client-executor-178] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Ack server push request, request = NotifySubscriberRequest, requestId = 31
-22:06:38:861 DEBUG 12744 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-22:06:38:861 DEBUG 12744 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-22:06:38:863 DEBUG 12744 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-22:06:38:864 DEBUG 12744 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-22:06:39:668 DEBUG 12744 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (803ms)
-22:06:42:711 DEBUG 12744 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-22:06:42:711 DEBUG 12744 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-22:06:42:713 DEBUG 12744 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-22:06:42:714 DEBUG 12744 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-22:06:43:229 DEBUG 12744 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (515ms)
-22:06:51:301 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?,?))
-22:06:51:302 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: null, 1533902(Long), 1713453(Long)
-22:06:51:303 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 0
-22:13:09:575  INFO 12744 --- [nacos-grpc-client-executor-257] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Receive server push request, request = NotifySubscriberRequest, requestId = 34
-22:13:09:581  INFO 12744 --- [nacos-grpc-client-executor-257] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Ack server push request, request = NotifySubscriberRequest, requestId = 34
-22:13:31:106  INFO 12744 --- [nacos-grpc-client-executor-261] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Receive server push request, request = NotifySubscriberRequest, requestId = 38
-22:13:31:114  INFO 12744 --- [nacos-grpc-client-executor-261] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Ack server push request, request = NotifySubscriberRequest, requestId = 38
-22:13:32:207 DEBUG 12744 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-22:13:32:207 DEBUG 12744 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-22:13:32:209 DEBUG 12744 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-22:13:32:212 DEBUG 12744 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-22:13:33:170 DEBUG 12744 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (957ms)
-22:13:44:831 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?,?))
-22:13:44:832 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: null, 1533902(Long), 1713453(Long)
-22:13:44:834 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 0
-22:22:25:695  INFO 12744 --- [nacos-grpc-client-executor-368] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Receive server push request, request = NotifySubscriberRequest, requestId = 40
-22:22:25:701  INFO 12744 --- [nacos-grpc-client-executor-368] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Ack server push request, request = NotifySubscriberRequest, requestId = 40
-22:25:11:817  INFO 12744 --- [nacos-grpc-client-executor-401] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Receive server push request, request = NotifySubscriberRequest, requestId = 44
-22:25:11:823  INFO 12744 --- [nacos-grpc-client-executor-401] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Ack server push request, request = NotifySubscriberRequest, requestId = 44
-22:25:23:957 DEBUG 12744 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-22:25:23:957 DEBUG 12744 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
-22:25:23:959 DEBUG 12744 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
-22:25:23:960 DEBUG 12744 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
-22:25:24:758 DEBUG 12744 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (797ms)
-22:25:30:779 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?,?))
-22:25:30:780 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: null, 1533902(Long), 1713453(Long)
-22:25:30:781 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 0
-22:30:28:488  INFO 12744 --- [nacos-grpc-client-executor-464] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Receive server push request, request = NotifySubscriberRequest, requestId = 47
-22:30:28:494  INFO 12744 --- [nacos-grpc-client-executor-464] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Ack server push request, request = NotifySubscriberRequest, requestId = 47
-22:32:27:794  INFO 12744 --- [nacos-grpc-client-executor-489] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Receive server push request, request = NotifySubscriberRequest, requestId = 51
-22:32:27:803  INFO 12744 --- [nacos-grpc-client-executor-489] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Ack server push request, request = NotifySubscriberRequest, requestId = 51
-22:32:44:507 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?,?))
-22:32:44:507 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: null, 1533902(Long), 1713453(Long)
-22:32:44:508 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 0
-22:34:22:430 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?,?))
-22:34:22:431 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: null, 1533902(Long), 1713453(Long)
-22:34:22:431 DEBUG 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 0
-22:35:04:806  WARN 12744 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-22:35:04:807  WARN 12744 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-22:35:04:807  WARN 12744 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-22:35:04:807  WARN 12744 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-22:35:04:814  INFO 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
-22:35:05:714  INFO 12744 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
-22:35:06:222  INFO 12744 --- [nacos-grpc-client-executor-521] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Receive server push request, request = NotifySubscriberRequest, requestId = 54
-22:35:06:228  INFO 12744 --- [nacos-grpc-client-executor-521] com.alibaba.nacos.common.remote.client   : [1f154241-d956-4647-b869-efb0f2e8ddb0] Ack server push request, request = NotifySubscriberRequest, requestId = 54
-22:35:06:473  INFO 12744 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-22:35:06:476  INFO 12744 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-22:35:06:803  INFO 12744 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
-22:35:06:803  INFO 12744 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@6bd89f57[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
-22:35:06:803  INFO 12744 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1712325171023_192.168.137.1_62776
-22:35:06:805  INFO 12744 --- [nacos-grpc-client-executor-524] c.a.n.c.remote.client.grpc.GrpcClient    : [1712325171023_192.168.137.1_62776]Ignore complete event,isRunning:false,isAbandon=false
-22:35:06:806  INFO 12744 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@2d0ab4d[Running, pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 525]
-22:35:06:810  INFO 12744 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-22:35:06:830  INFO 12744 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-22:35:06:833  INFO 12744 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
-22:35:06:837  INFO 12744 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0xa43c594f, L:/192.168.137.1:62981 ! R:/192.168.137.128:8099]
-22:35:06:837  INFO 12744 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0xa43c594f, L:/192.168.137.1:62981 ! R:/192.168.137.128:8099]
-22:35:06:837  INFO 12744 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0xa43c594f, L:/192.168.137.1:62981 ! R:/192.168.137.128:8099]
-22:35:06:837  INFO 12744 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0xa43c594f, L:/192.168.137.1:62981 ! R:/192.168.137.128:8099]
-22:35:06:837  INFO 12744 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xa43c594f, L:/192.168.137.1:62981 ! R:/192.168.137.128:8099]) will closed
-22:35:06:837  INFO 12744 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xa43c594f, L:/192.168.137.1:62981 ! R:/192.168.137.128:8099]) will closed
+19:47:21:568  INFO 18544 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+19:47:25:547  INFO 18544 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c0bc9165-ae78-3bb1-9c93-70219a1bc65b
+19:47:25:632  INFO 18544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:47:25:633  INFO 18544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:47:25:633  INFO 18544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:47:25:668  INFO 18544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:47:25:672  INFO 18544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:47:25:673  INFO 18544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:47:25:674  INFO 18544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$570/0x0000000800687c40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:47:25:674  INFO 18544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:47:25:680  INFO 18544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:47:25:684  INFO 18544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:47:25:687  INFO 18544 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
+19:47:25:754  INFO 18544 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+19:47:25:759  INFO 18544 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+19:47:25:834  INFO 18544 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
+19:47:25:913  INFO 18544 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+19:47:25:951  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 81c76b52-9558-46be-a285-fa7d06db2826
+19:47:25:951  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [81c76b52-9558-46be-a285-fa7d06db2826] RpcClient init label, labels = {module=naming, source=sdk}
+19:47:25:953  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [81c76b52-9558-46be-a285-fa7d06db2826] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+19:47:25:953  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [81c76b52-9558-46be-a285-fa7d06db2826] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+19:47:25:954  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [81c76b52-9558-46be-a285-fa7d06db2826] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+19:47:25:954  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [81c76b52-9558-46be-a285-fa7d06db2826] Try to connect to server on start up, server: {serverIp = '192.168.137.128', server main port = 8848}
+19:47:26:089  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [81c76b52-9558-46be-a285-fa7d06db2826] Success to connect to server [192.168.137.128:8848] on start up, connectionId = 1712404045967_192.168.137.1_51590
+19:47:26:090  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [81c76b52-9558-46be-a285-fa7d06db2826] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+19:47:26:090  INFO 18544 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [81c76b52-9558-46be-a285-fa7d06db2826] Notify connected event to listeners.
+19:47:26:090  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [81c76b52-9558-46be-a285-fa7d06db2826] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$476/0x000000080042b440
+19:47:26:141  INFO 18544 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.137.128:8099
+19:47:26:693  INFO 18544 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [81c76b52-9558-46be-a285-fa7d06db2826] Receive server push request, request = NotifySubscriberRequest, requestId = 29
+19:47:26:699  INFO 18544 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [81c76b52-9558-46be-a285-fa7d06db2826] Ack server push request, request = NotifySubscriberRequest, requestId = 29
+19:47:27:036  INFO 18544 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:192.168.137.128:8099,msg:< RegisterTMRequest{applicationId='cart-service', transactionServiceGroup='hmall'} >
+19:47:27:972  INFO 18544 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0xe4eebc95, L:/192.168.137.1:51593 - R:/192.168.137.128:8099]
+19:47:27:976  INFO 18544 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 44 ms, version:1.5.2,role:TMROLE,channel:[id: 0xe4eebc95, L:/192.168.137.1:51593 - R:/192.168.137.128:8099]
+19:47:27:976  INFO 18544 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[cart-service] txServiceGroup[hmall]
+19:47:27:985  INFO 18544 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
+19:47:27:985  INFO 18544 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
+19:47:27:995  INFO 18544 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+19:47:27:995  INFO 18544 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[cart-service] txServiceGroup[hmall]
+19:47:27:995  INFO 18544 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
+19:47:27:998  INFO 18544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:47:28:169  INFO 18544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:47:28:174  INFO 18544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:47:28:420  INFO 18544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+19:47:28:421  INFO 18544 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+19:47:28:421  INFO 18544 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+19:47:28:421  INFO 18544 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+19:47:28:422  INFO 18544 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+19:47:28:425  INFO 18544 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+19:47:28:435  INFO 18544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:47:28:436  INFO 18544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+19:47:28:673  INFO 18544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:47:28:673  INFO 18544 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6859 ms
+19:47:28:914  INFO 18544 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+19:47:29:229  INFO 18544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+19:47:29:402  INFO 18544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+19:47:29:544  INFO 18544 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.137.128:8099
+19:47:29:545  INFO 18544 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://192.168.137.128:3306/hm-cart
+19:47:29:545  INFO 18544 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:192.168.137.128:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://192.168.137.128:3306/hm-cart', applicationId='cart-service', transactionServiceGroup='hmall'} >
+19:47:29:553  INFO 18544 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x8adca343, L:/192.168.137.1:51600 - R:/192.168.137.128:8099]
+19:47:29:553  INFO 18544 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 6 ms, version:1.5.2,role:RMROLE,channel:[id: 0x8adca343, L:/192.168.137.1:51600 - R:/192.168.137.128:8099]
+19:47:32:419  INFO 18544 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+19:47:33:781  INFO 18544 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+19:47:35:177  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 377b07e5-e79a-4f3b-a03e-0a0c87dab905
+19:47:35:177  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [377b07e5-e79a-4f3b-a03e-0a0c87dab905] RpcClient init label, labels = {module=naming, source=sdk}
+19:47:35:178  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [377b07e5-e79a-4f3b-a03e-0a0c87dab905] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+19:47:35:178  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [377b07e5-e79a-4f3b-a03e-0a0c87dab905] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+19:47:35:178  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [377b07e5-e79a-4f3b-a03e-0a0c87dab905] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+19:47:35:178  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [377b07e5-e79a-4f3b-a03e-0a0c87dab905] Try to connect to server on start up, server: {serverIp = '192.168.137.128', server main port = 8848}
+19:47:35:299  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [377b07e5-e79a-4f3b-a03e-0a0c87dab905] Success to connect to server [192.168.137.128:8848] on start up, connectionId = 1712404055189_192.168.137.1_51615
+19:47:35:299  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [377b07e5-e79a-4f3b-a03e-0a0c87dab905] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+19:47:35:299  INFO 18544 --- [main] com.alibaba.nacos.common.remote.client   : [377b07e5-e79a-4f3b-a03e-0a0c87dab905] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$476/0x000000080042b440
+19:47:35:299  INFO 18544 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [377b07e5-e79a-4f3b-a03e-0a0c87dab905] Notify connected event to listeners.
+19:47:35:320  INFO 18544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+19:47:35:327  INFO 18544 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 192.168.137.1:8082 register finished
+19:47:35:805  INFO 18544 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [377b07e5-e79a-4f3b-a03e-0a0c87dab905] Receive server push request, request = NotifySubscriberRequest, requestId = 33
+19:47:35:813  INFO 18544 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [377b07e5-e79a-4f3b-a03e-0a0c87dab905] Ack server push request, request = NotifySubscriberRequest, requestId = 33
+19:47:36:256  INFO 18544 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+19:47:36:259  INFO 18544 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+19:47:36:279  INFO 18544 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+19:47:36:347  INFO 18544 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.137.128:5672]
+19:47:36:397  INFO 18544 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#69bdcfbc:0/SimpleConnection@58de1da2 [delegate=amqp://hmall@192.168.137.128:5672//hmall, localPort= 51619]
+19:47:36:462  INFO 18544 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 24.368 seconds (JVM running for 26.853)
+19:47:36:466  INFO 18544 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service, group=DEFAULT_GROUP
+19:47:36:472  INFO 18544 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service.yaml, group=DEFAULT_GROUP
+19:47:36:473  INFO 18544 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service-local.yaml, group=DEFAULT_GROUP
+19:56:39:720  INFO 18544 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:56:39:720  INFO 18544 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+19:56:39:722  INFO 18544 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+19:56:39:925 DEBUG 18544 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+19:56:39:942 DEBUG 18544 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+19:56:39:970 DEBUG 18544 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
+19:56:40:007 DEBUG 18544 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
+19:56:40:620  INFO 18544 --- [nacos-grpc-client-executor-123] com.alibaba.nacos.common.remote.client   : [377b07e5-e79a-4f3b-a03e-0a0c87dab905] Receive server push request, request = NotifySubscriberRequest, requestId = 44
+19:56:40:621  INFO 18544 --- [nacos-grpc-client-executor-123] com.alibaba.nacos.common.remote.client   : [377b07e5-e79a-4f3b-a03e-0a0c87dab905] Ack server push request, request = NotifySubscriberRequest, requestId = 44
+19:56:41:396 DEBUG 18544 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (1388ms)
+19:56:42:430 DEBUG 18544 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+19:56:42:431 DEBUG 18544 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+19:56:42:434 DEBUG 18544 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
+19:56:42:437 DEBUG 18544 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
+19:56:42:962 DEBUG 18544 --- [http-nio-8082-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (524ms)
+19:57:01:821 DEBUG 18544 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) FROM cart WHERE (user_id = ? AND item_id = ?)
+19:57:01:822 DEBUG 18544 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 100001905417(Long)
+19:57:01:823 DEBUG 18544 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+19:57:01:825 DEBUG 18544 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) FROM cart WHERE (user_id = ?)
+19:57:01:825 DEBUG 18544 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+19:57:01:826 DEBUG 18544 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+19:57:01:829 DEBUG 18544 --- [http-nio-8082-exec-3] com.hmall.cart.mapper.CartMapper.insert  : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+19:57:01:829 DEBUG 18544 --- [http-nio-8082-exec-3] com.hmall.cart.mapper.CartMapper.insert  : ==> Parameters: 1(Long), 100001905417(Long), 【千玺代言】华为新品 HUAWEI nova 4 极点全面屏手机 2000万超广角三摄 8GB+128GB 蜜语红 全网通双卡双待(String), {"颜色": "红色"}(String), 224900(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/20085/14/1076/149604/5c0f8dd2Ebafd3bfd/0cb34a7826cbe1c3.jpg!q70.jpg.webp(String)
+19:57:01:856 DEBUG 18544 --- [http-nio-8082-exec-3] com.hmall.cart.mapper.CartMapper.insert  : <==    Updates: 1
+19:57:01:903 DEBUG 18544 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+19:57:01:904 DEBUG 18544 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+19:57:01:906 DEBUG 18544 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 5
+19:57:01:908 DEBUG 18544 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207&ids=100001905417 HTTP/1.1
+19:57:02:417 DEBUG 18544 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (508ms)
+19:59:40:196 DEBUG 18544 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+19:59:40:198 DEBUG 18544 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: null, 1533902(Long)
+19:59:40:201 DEBUG 18544 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 0
+20:01:42:943 DEBUG 18544 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
+20:01:42:944 DEBUG 18544 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 4(Integer), 27(Long)
+20:01:42:948 DEBUG 18544 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
+20:01:42:957 DEBUG 18544 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
+20:01:42:957 DEBUG 18544 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 4(Integer), 27(Long)
+20:01:42:958 DEBUG 18544 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
+20:01:42:968 DEBUG 18544 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+20:01:42:968 DEBUG 18544 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+20:01:42:971 DEBUG 18544 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 5
+20:01:42:974 DEBUG 18544 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207&ids=100001905417 HTTP/1.1
+20:01:43:497 DEBUG 18544 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (523ms)
+20:01:43:529 DEBUG 18544 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+20:01:43:529 DEBUG 18544 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+20:01:43:531 DEBUG 18544 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 5
+20:01:43:532 DEBUG 18544 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207&ids=100001905417 HTTP/1.1
+20:01:44:044 DEBUG 18544 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (511ms)
+20:01:44:056 DEBUG 18544 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
+20:01:44:057 DEBUG 18544 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 4(Integer), 27(Long)
+20:01:44:058 DEBUG 18544 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
+20:01:44:089 DEBUG 18544 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+20:01:44:089 DEBUG 18544 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+20:01:44:091 DEBUG 18544 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 5
+20:01:44:092 DEBUG 18544 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207&ids=100001905417 HTTP/1.1
+20:01:44:604 DEBUG 18544 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (511ms)
+20:01:44:614 DEBUG 18544 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
+20:01:44:614 DEBUG 18544 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 3(Integer), 27(Long)
+20:01:44:618 DEBUG 18544 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
+20:01:44:628 DEBUG 18544 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+20:01:44:628 DEBUG 18544 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+20:01:44:630 DEBUG 18544 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 5
+20:01:44:632 DEBUG 18544 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207&ids=100001905417 HTTP/1.1
+20:01:45:149 DEBUG 18544 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (517ms)
+20:01:50:733 DEBUG 18544 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.deleteById    : ==>  Preparing: DELETE FROM cart WHERE id=?
+20:01:50:734 DEBUG 18544 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.deleteById    : ==> Parameters: 28(Long)
+20:01:50:738 DEBUG 18544 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.deleteById    : <==    Updates: 1
+20:01:50:762 DEBUG 18544 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+20:01:50:762 DEBUG 18544 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+20:01:50:764 DEBUG 18544 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 4
+20:01:50:765 DEBUG 18544 --- [http-nio-8082-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902&ids=5001207 HTTP/1.1
+20:01:51:285 DEBUG 18544 --- [http-nio-8082-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (519ms)
+20:01:53:025 DEBUG 18544 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.deleteById    : ==>  Preparing: DELETE FROM cart WHERE id=?
+20:01:53:025 DEBUG 18544 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.deleteById    : ==> Parameters: 26(Long)
+20:01:53:029 DEBUG 18544 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.deleteById    : <==    Updates: 1
+20:01:53:049 DEBUG 18544 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+20:01:53:050 DEBUG 18544 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+20:01:53:051 DEBUG 18544 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 3
+20:01:53:052 DEBUG 18544 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=2030774&ids=1533902 HTTP/1.1
+20:01:53:561 DEBUG 18544 --- [http-nio-8082-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (509ms)
+20:01:54:242 DEBUG 18544 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.deleteById    : ==>  Preparing: DELETE FROM cart WHERE id=?
+20:01:54:242 DEBUG 18544 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.deleteById    : ==> Parameters: 21(Long)
+20:01:54:246 DEBUG 18544 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.deleteById    : <==    Updates: 1
+20:01:54:273 DEBUG 18544 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+20:01:54:273 DEBUG 18544 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+20:01:54:274 DEBUG 18544 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 2
+20:01:54:275 DEBUG 18544 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=1533902 HTTP/1.1
+20:01:54:784 DEBUG 18544 --- [http-nio-8082-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (508ms)
+20:01:56:825 DEBUG 18544 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
+20:01:56:825 DEBUG 18544 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 2(Integer), 27(Long)
+20:01:56:829 DEBUG 18544 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
+20:01:56:855 DEBUG 18544 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+20:01:56:856 DEBUG 18544 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+20:01:56:857 DEBUG 18544 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 2
+20:01:56:858 DEBUG 18544 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=1533902 HTTP/1.1
+20:01:57:367 DEBUG 18544 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (509ms)
+20:01:58:235 DEBUG 18544 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.updateById    : ==>  Preparing: UPDATE cart SET num=? WHERE id=?
+20:01:58:236 DEBUG 18544 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.updateById    : ==> Parameters: 1(Integer), 27(Long)
+20:01:58:239 DEBUG 18544 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.updateById    : <==    Updates: 1
+20:01:58:267 DEBUG 18544 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+20:01:58:267 DEBUG 18544 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+20:01:58:268 DEBUG 18544 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 2
+20:01:58:269 DEBUG 18544 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=1533902 HTTP/1.1
+20:01:58:780 DEBUG 18544 --- [http-nio-8082-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (510ms)
+20:02:33:796 DEBUG 18544 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+20:02:33:796 DEBUG 18544 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: null, 1713453(Long)
+20:02:33:798 DEBUG 18544 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 0
+20:02:39:681 DEBUG 18544 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+20:02:39:681 DEBUG 18544 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+20:02:39:683 DEBUG 18544 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 2
+20:02:39:683 DEBUG 18544 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453&ids=1533902 HTTP/1.1
+20:02:40:200 DEBUG 18544 --- [http-nio-8082-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (516ms)
+20:12:20:802  WARN 18544 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+20:12:20:802  WARN 18544 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+20:12:20:802  WARN 18544 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+20:12:20:803  WARN 18544 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+20:12:20:816  INFO 18544 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+20:12:21:721  INFO 18544 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+20:12:22:436  INFO 18544 --- [nacos-grpc-client-executor-315] com.alibaba.nacos.common.remote.client   : [377b07e5-e79a-4f3b-a03e-0a0c87dab905] Receive server push request, request = NotifySubscriberRequest, requestId = 54
+20:12:22:441  INFO 18544 --- [nacos-grpc-client-executor-315] com.alibaba.nacos.common.remote.client   : [377b07e5-e79a-4f3b-a03e-0a0c87dab905] Ack server push request, request = NotifySubscriberRequest, requestId = 54
+20:12:22:567  INFO 18544 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+20:12:22:570  INFO 18544 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+20:12:22:898  INFO 18544 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+20:12:22:898  INFO 18544 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@5b522b74[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+20:12:22:898  INFO 18544 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1712404055189_192.168.137.1_51615
+20:12:22:900  INFO 18544 --- [nacos-grpc-client-executor-318] c.a.n.c.remote.client.grpc.GrpcClient    : [1712404055189_192.168.137.1_51615]Ignore complete event,isRunning:false,isAbandon=false
+20:12:22:901  INFO 18544 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@1546d104[Running, pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 319]
+20:12:22:909  INFO 18544 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+20:12:22:930  INFO 18544 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+20:12:22:934  INFO 18544 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
