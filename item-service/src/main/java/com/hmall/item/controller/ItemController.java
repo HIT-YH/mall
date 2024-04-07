@@ -73,13 +73,23 @@ public class ItemController {
     public void updateItemStatus(@PathVariable("id") Long id, @PathVariable("status") Integer status){
         Item item = new Item();
         item.setId(id);
+        int pre_Status = item.getStatus();
         item.setStatus(status);
         itemService.updateById(item);
 
         //异步调用mq更新elasticsearch
-        List<Item> es_items = new ArrayList<Item>();
-        es_items.add(item);
-        itemService.updateElasticsearch(es_items);
+        if(item.getStatus() == 1){//商品上架
+            List<Item> es_items = new ArrayList<Item>();
+            es_items.add(item);
+            itemService.updateElasticsearch(es_items);
+        }
+
+        if(pre_Status == 1 && item.getStatus() == 0){//商品从上架变成下降
+            List<Long> es_ids = new ArrayList<Long>();
+            es_ids.add(id);
+            itemService.deleteElasticsearch(es_ids);
+        }
+
 
     }
 
@@ -94,9 +104,12 @@ public class ItemController {
         itemService.updateById(item);
 
         //异步调用mq更新elasticsearch
-        List<Item> es_items = new ArrayList<Item>();
-        es_items.add(item);
-        itemService.updateElasticsearch(es_items);
+        if(item.getStatus() == 1){
+            List<Item> es_items = new ArrayList<Item>();
+            es_items.add(item);
+            itemService.updateElasticsearch(es_items);
+        }
+
 
     }
 

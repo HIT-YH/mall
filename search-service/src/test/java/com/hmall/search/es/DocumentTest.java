@@ -110,6 +110,7 @@ public class DocumentTest {//文档测试类
         int size = 1000;
         while (true) {
             //借助分页插件，分批次将数据导入elasticsearch索引库中
+            //Status = 1表示该商品为上架状态
             Page<Item> page = itemService.lambdaQuery().eq(Item::getStatus, 1).page(new Page<Item>(pageNo, size));
             // 非空校验
             List<Item> items = page.getRecords();

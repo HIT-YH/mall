@@ -22,7 +22,7 @@ public interface ISearchService extends IService<Item> {
 
     void deleteItems(List<Long> ids);
 
-    PageDTO<ItemDTO> search(ItemPageQuery query);
+    PageDTO<ItemDTO> searchES(ItemPageQuery query);
 
 
 }

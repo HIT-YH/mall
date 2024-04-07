@@ -161,6 +161,7 @@ public class SearchTest {//查询测试类
         SearchResponse response = client.search(request, RequestOptions.DEFAULT);
         // 4.解析响应
         handleResponse(response);
+
     }
 
     @Test
