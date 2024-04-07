@@ -24,5 +24,9 @@ public interface IItemService extends IService<Item> {
 
     List<ItemDTO> queryItemByIds(Collection<Long> ids);
 
+    void updateElasticsearch(List<Item> items);
+
+    void deleteElasticsearch(List<Long> ids);
+
 
 }

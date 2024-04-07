@@ -4,7 +4,7 @@ import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.hmall.common.utils.CollUtils;
-import com.hmall.item.domain.dto.ItemDTO;
+import com.hmall.common.domain.dto.ItemESDTO;
 import com.hmall.item.domain.po.Item;
 import com.hmall.item.service.IItemService;
 import lombok.extern.slf4j.Slf4j;
@@ -54,14 +54,14 @@ public class DocumentTest {//文档测试类
     @Test
     void testAddDocument() throws IOException {//添加文档
         // 1.根据id查询商品数据
-        Item item = itemService.getById(100002644680L);
+        Item item = itemService.getById(1533902L);
         // 2.转换为文档类型
-        ItemDTO itemDTO = BeanUtil.copyProperties(item, ItemDTO.class);
+        ItemESDTO itemESDTO = BeanUtil.copyProperties(item, ItemESDTO.class);
         // 3.将ItemDTO转json
-        String doc = JSONUtil.toJsonStr(itemDTO);
+        String doc = JSONUtil.toJsonStr(itemESDTO);
 
         // 1.准备Request对象
-        IndexRequest request = new IndexRequest("items").id(itemDTO.getId());
+        IndexRequest request = new IndexRequest("items").id(itemESDTO.getId());
         // 2.准备Json文档
         request.source(doc, XContentType.JSON);
         // 3.发送请求
@@ -77,14 +77,14 @@ public class DocumentTest {//文档测试类
         // 3.获取响应结果中的source
         String json = response.getSourceAsString();
 
-        ItemDTO itemDTO = JSONUtil.toBean(json, ItemDTO.class);
-        System.out.println("itemDTO = " + itemDTO);
+        ItemESDTO itemESDTO = JSONUtil.toBean(json, ItemESDTO.class);
+        System.out.println("itemDTO = " + itemESDTO);
     }
 
     @Test
     void testDeleteDocument() throws IOException {//删除文档
         // 1.准备Request，两个参数，第一个是索引库名，第二个是文档id
-        DeleteRequest request = new DeleteRequest("items", "100002644680");
+        DeleteRequest request = new DeleteRequest("items", "1533902");
         // 2.发送请求
         client.delete(request, RequestOptions.DEFAULT);
     }
@@ -122,11 +122,11 @@ public class DocumentTest {//文档测试类
             // 2.准备参数，添加多个新增的Request
             for (Item item : items) {
                 // 2.1.转换为文档类型ItemDTO
-                ItemDTO itemDTO = BeanUtil.copyProperties(item, ItemDTO.class);
+                ItemESDTO itemESDTO = BeanUtil.copyProperties(item, ItemESDTO.class);
                 // 2.2.创建新增文档的Request对象
                 request.add(new IndexRequest()
-                        .id(itemDTO.getId())
-                        .source(JSONUtil.toJsonStr(itemDTO), XContentType.JSON));
+                        .id(itemESDTO.getId())
+                        .source(JSONUtil.toJsonStr(itemESDTO), XContentType.JSON));
             }
             // 3.发送请求
             client.bulk(request, RequestOptions.DEFAULT);

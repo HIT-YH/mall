@@ -22,7 +22,7 @@ public class IndexTest {
             "  \"mappings\": {\n" +
             "    \"properties\": {\n" +
             "      \"id\": {\n" +
-            "        \"type\": \"keyword\"\n" +
+            "        \"type\": \"Long\"\n" +
             "      },\n" +
             "      \"name\":{\n" +
             "        \"type\": \"text\",\n" +

@@ -8,3 +8,6 @@ hm:
     title: "黑马商城搜索接口文档"
     package: com.hmall.search.controller
     description: "黑马商城搜索接口文档"
+  es:
+    host: 192.168.137.128
+    port: 9200

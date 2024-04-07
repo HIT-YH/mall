@@ -15,6 +15,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -54,9 +55,17 @@ public class ItemController {
 
     @ApiOperation("新增商品")
     @PostMapping
-    public void saveItem(@RequestBody ItemDTO item) {
+    public void saveItem(@RequestBody ItemDTO itemDTO) {
+
+        Item item = BeanUtils.copyBean(itemDTO, Item.class);
         // 新增
-        itemService.save(BeanUtils.copyBean(item, Item.class));
+        itemService.save(item);
+
+        //异步调用mq更新elasticsearch
+        List<Item> es_items = new ArrayList<Item>();
+        es_items.add(item);
+        itemService.updateElasticsearch(es_items);
+
     }
 
     @ApiOperation("更新商品状态")
@@ -66,21 +75,41 @@ public class ItemController {
         item.setId(id);
         item.setStatus(status);
         itemService.updateById(item);
+
+        //异步调用mq更新elasticsearch
+        List<Item> es_items = new ArrayList<Item>();
+        es_items.add(item);
+        itemService.updateElasticsearch(es_items);
+
     }
 
     @ApiOperation("更新商品")
     @PutMapping
-    public void updateItem(@RequestBody ItemDTO item) {
+    public void updateItem(@RequestBody ItemDTO itemDTO) {
         // 不允许修改商品状态，所以强制设置为null，更新时，就会忽略该字段
-        item.setStatus(null);
+        itemDTO.setStatus(null);
+        Item item = BeanUtils.copyBean(itemDTO, Item.class);
+
         // 更新
-        itemService.updateById(BeanUtils.copyBean(item, Item.class));
+        itemService.updateById(item);
+
+        //异步调用mq更新elasticsearch
+        List<Item> es_items = new ArrayList<Item>();
+        es_items.add(item);
+        itemService.updateElasticsearch(es_items);
+
     }
 
     @ApiOperation("根据id删除商品")
     @DeleteMapping("{id}")
     public void deleteItemById(@PathVariable("id") Long id) {
         itemService.removeById(id);
+
+        //异步调用mq更新elasticsearch
+        List<Long> es_ids = new ArrayList<Long>();
+        es_ids.add(id);
+        itemService.deleteElasticsearch(es_ids);
+
     }
 
     @ApiOperation("批量扣减库存")

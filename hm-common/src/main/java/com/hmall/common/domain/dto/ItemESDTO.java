@@ -1,4 +1,4 @@
-package com.hmall.item.domain.dto;
+package com.hmall.common.domain.dto;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 
 @Data
 @ApiModel(description = "索引库实体")
-public class ItemDTO{//与索引库一一对应，与数据库的表并非一一对应，去除了索引库不需要用到的列
+public class ItemESDTO {//与索引库一一对应，与数据库的表并非一一对应，去除了索引库不需要用到的列
 
     @ApiModelProperty("商品id")
     private String id;
